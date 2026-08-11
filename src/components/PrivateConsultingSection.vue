@@ -72,12 +72,9 @@ const bgImage = computed(() => {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
-  z-index: 2;
-}
-
-html[dir="rtl"] .consulting-overlay {
+  /* RTL: gradient fades from right to left */
   background: linear-gradient(270deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+  z-index: 2;
 }
 
 .consulting-container {
@@ -85,7 +82,7 @@ html[dir="rtl"] .consulting-overlay {
   z-index: 3;
   width: 100%;
   display: flex;
-  padding: 0 80px;
+  padding: 24px 80px; /* Figma: 24px 80px */
 }
 
 .consulting-content {
@@ -117,31 +114,27 @@ html[dir="rtl"] .consulting-overlay {
 
 .consulting-desc {
   font-family: var(--sf-font-body);
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.8;
-  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 32px; /* Figma: 32px */
+  line-height: 1.5;
+  color: var(--sf-teal-deep); /* Figma: #093B33 */
 }
 
 .consulting-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 32px;
-  border-radius: 100px;
-  background-color: var(--sf-gold);
-  color: var(--sf-dark); /* Ensure text is visible on gold */
+  padding: 8px 16px;
+  border-radius: 1000px;
+  background: var(--sf-gradient-teal-btn); /* Figma: teal gradient */
+  color: #fff;
   font-family: var(--sf-font-secondary);
   font-weight: 700;
   font-size: 16px;
-  width: fit-content;
+  line-height: 1.5em;
+  width: 100%; /* Figma: alignSelf stretch */
+  height: 48px;
   transition: all 0.3s ease;
-}
-
-.consulting-btn:hover {
-  background-color: var(--sf-gold-light);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(184, 151, 95, 0.4);
 }
 
 @media (max-width: 768px) {
@@ -150,9 +143,6 @@ html[dir="rtl"] .consulting-overlay {
     align-items: flex-end;
   }
   .consulting-overlay {
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
-  }
-  html[dir="rtl"] .consulting-overlay {
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
   }
   .consulting-container {

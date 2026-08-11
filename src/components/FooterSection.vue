@@ -94,16 +94,16 @@
 .footer-section {
   position: relative;
   background: var(--sf-gradient-teal-footer);
-  padding: 64px 0 48px;
+  padding: 0; /* Padding on container */
   overflow: hidden;
 }
 
 .footer-watermark {
   position: absolute;
-  bottom: 0;
-  left: -100px;
-  width: 484px;
-  height: 378px;
+  top: -24px; /* Figma: y:-24 */
+  left: -60px; /* Figma: x:-60 */
+  width: 595px;
+  height: 464px;
   opacity: 0.08;
   pointer-events: none;
   z-index: 1;
@@ -114,8 +114,8 @@
   z-index: 2;
   display: flex;
   flex-direction: column;
-  gap: 64px;
-  padding: 0 80px;
+  gap: 16px; /* Figma: 16px */
+  padding: 48px 80px; /* Figma: 48px 80px */
 }
 
 .footer-top {
@@ -216,7 +216,7 @@
 /* Links Columns */
 .footer-links {
   display: flex;
-  gap: 80px;
+  gap: 48px; /* Figma: 48px */
   flex: 1;
   justify-content: flex-end;
 }
@@ -269,8 +269,9 @@
 
 .footer-divider {
   width: 100%;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.2);
+  height: 0;
+  border: none;
+  border-top: 0.5px solid #F8F5ED; /* Figma: 0.5px #F8F5ED */
 }
 
 .footer-bottom {
@@ -286,31 +287,29 @@
 }
 
 .social-link {
-  width: 40px;
-  height: 40px;
+  width: 32px; /* Figma: 32x32 */
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .social-link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0.7;
 }
 
 .social-link img {
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   filter: brightness(0) invert(1);
 }
 
 .copyright {
   font-family: var(--sf-font-body);
-  font-weight: 400;
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500; /* Figma: Medium 500 */
+  font-size: 16px; /* Figma: 16px */
+  color: #F8F5EF; /* Figma: #F8F5EF */
 }
 
 @media (max-width: 1024px) {
@@ -334,8 +333,8 @@
     padding: 48px 0 32px;
   }
   .footer-container {
-    padding: 0 24px;
-    gap: 48px;
+    padding: 48px 24px;
+    gap: 24px;
   }
   .newsletter-box {
     padding: 24px;
@@ -354,9 +353,11 @@
     justify-content: center;
   }
   .footer-watermark {
-    width: 300px;
-    height: 234px;
-    left: -50px;
+    width: 484px;
+    height: 378px;
+    left: -100px;
+    top: auto;
+    bottom: 0;
   }
 }
 </style>

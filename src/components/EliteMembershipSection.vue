@@ -32,20 +32,7 @@ const features = [
   <section class="membership-section" id="membership">
     <div class="membership-container sf-container">
       
-      <!-- Right Side: Content -->
-      <div class="membership-content">
-        <h2 class="membership-title">عضوية النخبة</h2>
-        <p class="membership-desc">
-          وحدك قد تصل سريعًا، لكن معًا سنصنع مجدا يورث لأجيال ..
-          <br>
-          حين ادركت قوة ان نمشي بنية موحدة اتجاه حياة أحلامنا قررت ان اصنع مجتمعا راقيا فخما لدعم نوايانا و اهدافنا بشكل مستمر..
-          <br>
-          و هذا يؤثر بشكل مباشر على إبقاء تردداتنا و بالتالي جذب اعلى و تجسيد اسرع لهويات جديدة
-        </p>
-        <button class="membership-btn">انضم الآن إلى عضوية النخبة</button>
-      </div>
-
-      <!-- Left Side: Features List -->
+      <!-- Right Side: Features List (Figma: Membership Info on right in RTL) -->
       <div class="membership-features">
         <div class="feature-item" v-for="(feature, index) in features" :key="index">
           <div class="feature-icon">
@@ -58,14 +45,27 @@ const features = [
         </div>
       </div>
 
+      <!-- Left Side: Content (Figma: Membership Benefits) -->
+      <div class="membership-content">
+        <h2 class="membership-title">عضوية النخبة</h2>
+        <p class="membership-desc">
+          وحدك قد تصل سريعًا، لكن معًا سنصنع مجدا يورث لأجيال ..
+          <br>
+          حين ادركت قوة ان نمشي بنية موحدة اتجاه حياة أحلامنا قررت ان اصنع مجتمعا راقيا فخما لدعم نوايانا و اهدافنا بشكل مستمر..
+          <br>
+          و هذا يؤثر بشكل مباشر على إبقاء تردداتنا و بالتالي جذب اعلى و تجسيد اسرع لهويات جديدة
+        </p>
+        <button class="membership-btn">انضم الآن إلى عضوية النخبة</button>
+      </div>
+
     </div>
   </section>
 </template>
 
 <style scoped>
 .membership-section {
-  padding: 80px 0;
-  background-color: var(--sf-bg-ivory); /* Mobile says F8F5EF, matches Ivory */
+  padding: 0; /* Padding is on container */
+  background: var(--sf-gradient-teal); /* Figma: teal gradient, not ivory */
 }
 
 .membership-container {
@@ -73,73 +73,34 @@ const features = [
   justify-content: space-between;
   align-items: center;
   gap: 64px;
-  padding: 0 80px;
+  padding: 48px 80px; /* Figma: 48px 80px */
 }
 
-.membership-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  max-width: 500px;
-}
-
-.membership-title {
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 48px;
-  color: var(--sf-teal-deep);
-}
-
-.membership-desc {
-  font-family: var(--sf-font-body);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.8;
-  color: var(--sf-teal-deep);
-}
-
-.membership-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 32px;
-  border-radius: 100px;
-  background-color: var(--sf-teal-deep);
-  color: #fff;
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 16px;
-  width: fit-content;
-  transition: opacity 0.3s ease;
-}
-
-.membership-btn:hover {
-  opacity: 0.9;
-}
-
+/* Features side (Figma: Membership Info — gold bordered rows) */
 .membership-features {
   flex: 1;
+  max-width: 577.5px; /* Figma: 577.5px */
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px; /* Figma: 16px */
 }
 
+/* Figma: gold-bordered rows with subtle gold gradient bg */
 .feature-item {
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  padding: 24px;
-  background-color: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 16px 24px;
+  background: linear-gradient(90deg, rgba(184, 151, 95, 0.1) 0%, rgba(247, 229, 155, 0.1) 100%);
+  border: 0.6px solid var(--sf-gold);
+  border-radius: 24px;
 }
 
 .feature-icon {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: rgba(9, 59, 51, 0.05);
+  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,8 +110,7 @@ const features = [
 .feature-icon img {
   width: 24px;
   height: 24px;
-  /* Icon colors might need adjustment if they are black. Typically filter for teal deep: */
-  /* filter: brightness(0) saturate(100%) invert(18%) sepia(35%) saturate(836%) hue-rotate(120deg) brightness(97%) contrast(97%); */
+  filter: brightness(0) invert(1); /* White icons on teal bg */
 }
 
 .feature-text {
@@ -163,7 +123,7 @@ const features = [
   font-family: var(--sf-font-secondary);
   font-weight: 700;
   font-size: 20px;
-  color: var(--sf-teal-deep);
+  color: #F8F5EF; /* Light text on teal bg */
 }
 
 .feature-desc {
@@ -171,27 +131,77 @@ const features = [
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--sf-teal-muted);
+  color: rgba(248, 245, 239, 0.7); /* Slightly muted light text */
+}
+
+/* Content / Benefits side */
+.membership-content {
+  flex: 1;
+  max-width: 557.5px; /* Figma: 557.5px */
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.membership-title {
+  font-family: var(--sf-font-secondary);
+  font-weight: 700;
+  font-size: 48px;
+  color: #F8F5EF; /* Light on teal */
+}
+
+.membership-desc {
+  font-family: var(--sf-font-body);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.8;
+  color: rgba(248, 245, 239, 0.8); /* Slightly muted */
+  text-align: center;
+}
+
+.membership-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 1000px;
+  background: var(--sf-gradient-gold-btn); /* Figma: gold gradient */
+  color: var(--sf-dark);
+  font-family: var(--sf-font-secondary);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5em;
+  width: 100%; /* Figma: alignSelf stretch */
+  height: 48px;
+  transition: opacity 0.3s ease;
+}
+
+.membership-btn:hover {
+  opacity: 0.9;
 }
 
 @media (max-width: 1024px) {
   .membership-container {
     flex-direction: column;
-    padding: 0 24px;
+    padding: 48px 24px;
   }
   .membership-content {
     max-width: 100%;
     text-align: center;
     align-items: center;
   }
+  .membership-features {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
   .membership-section {
-    padding: 48px 24px;
+    padding: 0;
   }
   .membership-container {
-    padding: 0;
+    padding: 48px 24px;
     gap: 32px;
   }
   .membership-title {

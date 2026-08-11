@@ -70,7 +70,7 @@ const stories = [
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 64px;
+  gap: 95px; /* Figma: 95px */
 }
 
 .stories-header {
@@ -85,13 +85,13 @@ const stories = [
   font-family: var(--sf-font-secondary);
   font-weight: 700;
   font-size: 48px;
-  color: var(--sf-teal-deep);
+  color: var(--sf-gold);
 }
 
 .stories-subtitle {
   font-family: var(--sf-font-body);
-  font-weight: 500;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 20px;
   color: var(--sf-teal-deep);
 }
 
@@ -175,13 +175,15 @@ const stories = [
 }
 
 .nav-dot {
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background-color: var(--sf-gold-light);
 }
 
 .nav-dot--active {
+  width: 17px;
+  height: 17px;
   background-color: var(--sf-teal-deep);
 }
 

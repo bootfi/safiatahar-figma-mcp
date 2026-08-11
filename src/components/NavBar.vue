@@ -24,44 +24,42 @@ const toggleMenu = () => {
 <template>
   <header :class="['navbar', { 'navbar--scrolled': isScrolled }]">
     <div class="navbar__container sf-container">
-      
-      <!-- Right Side: Logo -->
-      <div class="navbar__logo">
-        <a href="/">
-          <img src="/icons/logo.svg" alt="Safia Tahar Logo" class="logo-img" />
-        </a>
-      </div>
-
-      <!-- Center: Navigation Links (Desktop only) -->
-      <nav class="navbar__nav">
-        <ul class="navbar__menu">
-          <li><a href="#home" class="navbar__link navbar__link--active">الرئيسية</a></li>
-          <li><a href="#courses" class="navbar__link">الدورات</a></li>
-          <li><a href="#consulting" class="navbar__link">الاستشارات</a></li>
-          <li><a href="#events" class="navbar__link">ويبينار</a></li>
-          <li><a href="#membership" class="navbar__link">عضوية النخبة</a></li>
-          <li><a href="#about" class="navbar__link">عن صفية</a></li>
-        </ul>
-      </nav>
-
-      <!-- Left Side: Actions -->
-      <div class="navbar__actions">
-        <a href="#login" class="navbar__login-link">سجل دخولك</a>
+      <div class="navbar__pill">
         
-        <div class="navbar__icons">
-          <button class="navbar__icon-btn" aria-label="Cart">
-            <img src="/icons/cart.svg" alt="Cart" class="nav-icon" />
-          </button>
+        <!-- Right Side (RTL): Actions -->
+        <div class="navbar__actions">
           <button class="navbar__icon-btn" aria-label="Search">
             <img src="/icons/search.svg" alt="Search" class="nav-icon" />
           </button>
+          <button class="navbar__icon-btn" aria-label="Cart">
+            <img src="/icons/cart.svg" alt="Cart" class="nav-icon" />
+          </button>
+          <button class="navbar__login-btn">سجل دخولك</button>
+        </div>
+
+        <!-- Center: Navigation Links (Desktop only) -->
+        <nav class="navbar__nav">
+          <ul class="navbar__menu">
+            <li><a href="#home" class="navbar__link navbar__link--active">الرئيسية</a></li>
+            <li><a href="#courses" class="navbar__link">الدورات</a></li>
+            <li><a href="#consulting" class="navbar__link">الاستشارات</a></li>
+            <li><a href="#events" class="navbar__link">ويبينار</a></li>
+            <li><a href="#membership" class="navbar__link">عضوية النخبة</a></li>
+            <li><a href="#about" class="navbar__link">عن صفية</a></li>
+          </ul>
+        </nav>
+
+        <!-- Left Side (RTL): Logo -->
+        <div class="navbar__logo">
+          <a href="/">
+            <img src="/icons/logo.svg" alt="Safia Tahar Logo" class="logo-img" />
+          </a>
         </div>
 
         <button class="navbar__btn-menu-mobile" @click="toggleMenu" aria-label="Menu">
           <img src="/icons/menu.svg" alt="Menu" class="nav-icon" />
         </button>
       </div>
-
     </div>
   </header>
 </template>
@@ -74,22 +72,60 @@ const toggleMenu = () => {
   right: 0;
   z-index: 100;
   transition: all 0.3s ease;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar--scrolled {
   position: fixed;
-  background-color: var(--sf-teal-deep);
+  background-color: transparent;
+}
+
+.navbar--scrolled .navbar__pill {
+  background-color: var(--sf-bg-primary);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border-bottom: none;
+}
+
+.navbar--scrolled .logo-img {
+  filter: none;
+}
+
+.navbar--scrolled .nav-icon {
+  filter: none;
+}
+
+.navbar--scrolled .navbar__link {
+  color: var(--sf-teal-deep);
+}
+
+.navbar--scrolled .navbar__link--active {
+  color: var(--sf-teal-deep);
+}
+
+.navbar--scrolled .navbar__link--active::after {
+  background-color: var(--sf-teal-deep);
+}
+
+.navbar--scrolled .navbar__login-btn {
+  color: var(--sf-dark);
 }
 
 .navbar__container {
   display: flex;
+  justify-content: center;
+  padding: 0 80px;
+  padding-top: 70px; /* Figma y:70 */
+}
+
+.navbar__pill {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 96px;
-  padding: 0 80px;
+  width: 1280px; /* Figma: 1280px */
+  max-width: 100%;
+  height: 80px; /* Figma: 80px */
+  padding: 16px 32px; /* Figma: 16px 32px */
+  border-radius: 1000px; /* Figma: pill shape */
+  background: transparent;
+  transition: all 0.3s ease;
 }
 
 .navbar__logo a {
@@ -101,6 +137,7 @@ const toggleMenu = () => {
   width: 90px;
   height: auto;
   filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
 }
 
 .navbar__nav {
@@ -139,33 +176,36 @@ const toggleMenu = () => {
   width: 100%;
   height: 2px;
   background-color: #FFFFFF;
+  transition: background-color 0.3s ease;
 }
 
 .navbar__actions {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 8px; /* Figma: gap 8px between action items */
 }
 
-.navbar__login-link {
-  font-family: var(--sf-font-body);
-  font-weight: 500;
-  font-size: 18px;
-  color: #FFFFFF;
+.navbar__login-btn {
+  font-family: var(--sf-font-secondary); /* Figma: NOTO NASKH ARABIC */
+  font-weight: 700;
+  font-size: 16px; /* Figma: 16px */
+  line-height: 20px;
+  color: #F8F5EF;
+  background: none;
+  padding: 8px 16px;
+  height: 40px;
+  border-radius: 1000px;
   transition: opacity 0.3s ease;
 }
 
-.navbar__login-link:hover {
+.navbar__login-btn:hover {
   opacity: 0.8;
 }
 
-.navbar__icons {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
 .navbar__icon-btn {
+  width: 40px; /* Figma: 40x40 */
+  height: 40px;
+  border-radius: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -179,9 +219,10 @@ const toggleMenu = () => {
 }
 
 .nav-icon {
-  width: 24px;
-  height: 24px;
+  width: 14px; /* Figma: 14x14 */
+  height: 14px;
   filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
 }
 
 .navbar__btn-menu-mobile {
@@ -203,14 +244,24 @@ const toggleMenu = () => {
 
   .navbar__container {
     padding: 0 24px;
+    padding-top: 34px; /* Mobile Figma AppBar y:34 */
+  }
+
+  .navbar__pill {
+    width: 100%;
+    height: 56px;
+    padding: 8px 16px;
   }
 }
 
 @media (max-width: 768px) {
-  .navbar__container {
-    height: 72px;
+  .navbar__pill {
+    height: 56px;
   }
-  .navbar__icons, .navbar__login-link {
+  .navbar__actions {
+    gap: 4px;
+  }
+  .navbar__login-btn {
     display: none;
   }
   .logo-img {

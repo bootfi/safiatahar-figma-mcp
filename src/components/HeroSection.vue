@@ -37,8 +37,10 @@ const bgImage = computed(() => {
             <span class="hero-title__part-1">أؤمن أن بداخل كل إنسان قوة..</span>
             <span class="hero-title__part-2">ومهمتي أن أوقظها</span>
           </h1>
-          <img class="hero-signature" src="/icons/signature.svg" alt="Safia Signature" />
         </div>
+
+        <!-- Signature moved to hero-content level for correct absolute positioning -->
+        <img class="hero-signature" src="/icons/signature.svg" alt="Safia Signature" />
 
         <button class="hero-btn">عش التحول الآن</button>
       </div>
@@ -107,7 +109,7 @@ const bgImage = computed(() => {
   font-family: var(--sf-font-secondary);
   font-weight: 700;
   font-size: 40px;
-  line-height: 1.5; /* Figma line height normal */
+  line-height: 1.5;
   color: #F8F5EF;
   margin: 0;
   padding: 0;
@@ -123,19 +125,25 @@ const bgImage = computed(() => {
 
 .hero-title__part-2 {
   display: block;
-  color: var(--sf-gold);
   width: 271px;
-  margin-top: 20px; /* roughly 834 - 766 - some font offset */
-  margin-right: 85px; /* (1440-1275) - 80 = 85px offset from parent right */
+  margin-top: 68px; /* Figma: 834 - 766 = 68px offset from quote top */
+  margin-right: 85px; /* (1440-1004-271) - (1440-988-372) = 165 - 80 = 85px offset from parent right */
   text-align: center;
+  /* Vertical gold gradient text per Figma */
+  background: var(--sf-gradient-gold-vertical);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* Fallback */
 }
 
+/* Signature positioned absolutely relative to hero-content (Figma: x:1012, y:901) */
 .hero-signature {
   position: absolute;
   top: 901px;
-  right: 338px; /* 1440 - (1012 + 90) = 338px */
-  width: 90px;
-  height: auto;
+  left: 1012px;
+  width: 89.77px;
+  height: 83px;
 }
 
 .hero-btn {
@@ -146,11 +154,13 @@ const bgImage = computed(() => {
   width: 376px;
   height: 48px;
   border-radius: 1000px;
-  background: var(--sf-gradient-gold);
+  background: var(--sf-gradient-gold-btn); /* Figma: 50% midpoint */
   color: var(--sf-dark);
-  font-family: var(--sf-font-body);
+  font-family: var(--sf-font-secondary); /* Figma: NOTO NASKH ARABIC */
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px; /* Figma: 16px, was 18px */
+  line-height: 1.5em;
+  padding: 8px 16px; /* Figma: 8px 16px */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,6 +186,9 @@ const bgImage = computed(() => {
   .hero-section {
     height: 850px;
   }
+  .hero-bg {
+    background-size: 100% 100%; /* Figma: scaleMode STRETCH */
+  }
   .hero-content {
     display: flex;
     flex-direction: column;
@@ -196,24 +209,42 @@ const bgImage = computed(() => {
     align-items: center;
     text-align: center;
   }
-  .hero-signature {
+  .hero-title__part-1 {
+    width: auto;
+    text-align: center;
+  }
+  .hero-title__part-2 {
+    width: auto;
+    margin-top: 16px;
     margin-right: 0;
+    text-align: center;
+  }
+  .hero-signature {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 60px;
+    height: auto;
     align-self: center;
+    margin-top: 8px;
+    margin-bottom: 16px;
   }
   .hero-btn {
     position: relative;
     bottom: auto;
     left: auto;
+    top: auto;
     width: 262px;
     height: 48px;
     padding: 12px 32px;
     font-size: 16px;
+    font-family: var(--sf-font-secondary); /* Match desktop */
   }
   .hero-watermark {
     width: 336px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 20%;
+    left: 28.5px; /* Figma x: 28.5 */
+    top: 50px;    /* Figma y: 50 */
+    transform: none;
   }
 }
 </style>

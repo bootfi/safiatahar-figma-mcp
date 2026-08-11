@@ -59,7 +59,7 @@ const audioItems = [
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 64px;
+  gap: 95px; /* Figma: 95px */
 }
 
 .audio-header {
@@ -74,13 +74,13 @@ const audioItems = [
   font-family: var(--sf-font-secondary);
   font-weight: 700;
   font-size: 48px;
-  color: var(--sf-teal-deep);
+  color: var(--sf-gold);
 }
 
 .audio-subtitle {
   font-family: var(--sf-font-body);
-  font-weight: 500;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 20px;
   color: var(--sf-teal-deep);
 }
 
@@ -110,14 +110,14 @@ const audioItems = [
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
   z-index: 1;
 }
 
 .audio-card-content {
   position: relative;
   z-index: 2;
-  padding: 32px 24px;
+  padding: 48px 32px; /* Figma: 48px 32px */
   display: flex;
   flex-direction: column;
   gap: 8px;

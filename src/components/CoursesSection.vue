@@ -121,13 +121,13 @@ const scrollRight = () => {
   font-family: var(--sf-font-secondary);
   font-weight: 700;
   font-size: 48px;
-  color: var(--sf-teal-deep);
+  color: var(--sf-gold);
 }
 
 .courses-subtitle {
   font-family: var(--sf-font-body);
-  font-weight: 500;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 20px;
   color: var(--sf-teal-deep);
 }
 
@@ -139,21 +139,23 @@ const scrollRight = () => {
 .nav-btn {
   width: 48px;
   height: 48px;
-  border-radius: 50%;
-  border: 1px solid var(--sf-teal-deep);
+  border-radius: 1000px;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
+  background: var(--sf-gradient-gold-btn);
   transition: all 0.3s ease;
 }
 
 .nav-btn:hover {
-  background-color: var(--sf-teal-deep);
+  opacity: 0.9;
+  transform: scale(1.05);
 }
 
-.nav-btn:hover img {
-  filter: brightness(0) invert(1);
+.nav-btn img {
+  width: 20px;
+  height: 20px;
 }
 
 .courses-list {
@@ -170,12 +172,14 @@ const scrollRight = () => {
 
 .course-card {
   min-width: 349px;
-  background-color: var(--sf-bg-ivory);
+  height: 495px;
+  background-color: var(--sf-bg-primary);
   border-radius: 24px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid var(--sf-gold);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
 .card-image-wrapper {

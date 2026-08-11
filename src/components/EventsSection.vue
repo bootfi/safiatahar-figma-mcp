@@ -31,8 +31,9 @@ const bgImage = computed(() => {
     <div class="events-container sf-container">
       <div class="events-content">
         <div class="events-header">
-          <h2 class="events-title">الفعاليات الحضورية لعام 2026</h2>
-          <h3 class="events-subtitle">يوم واحد قد يكون بداية شيء مختلف عن كل ما سبق.</h3>
+          <!-- Figma: subtitle first (small text), then title (big text) -->
+          <p class="events-label">الفعاليات الحضورية لعام 2026</p>
+          <h2 class="events-title">يوم واحد قد يكون بداية شيء مختلف عن كل ما سبق.</h2>
         </div>
         
         <p class="events-desc">
@@ -77,13 +78,9 @@ const bgImage = computed(() => {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+  /* Figma: linear-gradient(-90deg, transparent 42%, black 100%) = RTL dark on right */
+  background: linear-gradient(270deg, rgba(0,0,0,0) 42%, rgba(0,0,0,1) 100%);
   z-index: 2;
-}
-
-/* RTL orientation adjustment */
-html[dir="rtl"] .events-overlay {
-  background: linear-gradient(270deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
 }
 
 .events-container {
@@ -91,14 +88,14 @@ html[dir="rtl"] .events-overlay {
   z-index: 3;
   width: 100%;
   display: flex;
-  padding: 0 80px;
+  padding: 48px 80px; /* Figma: 48px 80px */
 }
 
 .events-content {
   max-width: 534px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 51px; /* Figma: gap 51px */
 }
 
 .events-header {
@@ -107,45 +104,53 @@ html[dir="rtl"] .events-overlay {
   gap: 8px;
 }
 
+/* Figma: small label first — Tajawal Regular 400 20px */
+.events-label {
+  font-family: var(--sf-font-body);
+  font-weight: 400;
+  font-size: 20px;
+  color: #F8F5EF;
+  margin: 0;
+}
+
+/* Figma: big title — Noto Naskh Arabic Bold 700 48px */
 .events-title {
   font-family: var(--sf-font-secondary);
   font-weight: 700;
   font-size: 48px;
-  color: #FFFFFF;
+  color: #F8F5EF;
 }
 
-.events-subtitle {
-  font-family: var(--sf-font-body);
-  font-weight: 500;
-  font-size: 24px;
-  color: var(--sf-gold);
-}
-
+/* Figma: Tajawal Medium 500 32px */
 .events-desc {
   font-family: var(--sf-font-body);
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.8;
-  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.5;
+  color: #F8F5EF;
+  margin: 0;
 }
 
+/* Figma: gold gradient button, full-width of content */
 .events-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 32px;
-  border-radius: 100px;
-  background-color: var(--sf-teal-deep);
-  color: #fff;
+  padding: 8px 16px;
+  border-radius: 1000px;
+  background: var(--sf-gradient-gold-btn);
+  color: var(--sf-dark);
   font-family: var(--sf-font-secondary);
   font-weight: 700;
   font-size: 16px;
-  width: fit-content;
-  transition: background-color 0.3s ease;
+  line-height: 1.5em;
+  height: 48px;
+  width: 100%; /* Figma: alignSelf stretch within 534px content */
+  transition: opacity 0.3s ease;
 }
 
 .events-btn:hover {
-  background-color: var(--sf-teal-muted);
+  opacity: 0.9;
 }
 
 @media (max-width: 768px) {
@@ -156,21 +161,18 @@ html[dir="rtl"] .events-overlay {
   .events-overlay {
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
   }
-  html[dir="rtl"] .events-overlay {
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-  }
   .events-container {
     padding: 48px 24px;
   }
   .events-content {
-    gap: 24px;
+    gap: 32px;
     text-align: center;
     align-items: center;
   }
   .events-title {
     font-size: 32px;
   }
-  .events-subtitle {
+  .events-label {
     font-size: 16px;
   }
   .events-desc {

@@ -63,7 +63,7 @@
 
 .voice-subtitle {
   font-family: var(--sf-font-body);
-  font-weight: 500;
+  font-weight: 400; /* Figma: Tajawal Regular 400 */
   font-size: 24px;
   color: var(--sf-teal-deep);
   max-width: 800px;
@@ -97,18 +97,24 @@
 .voice-text-1, .voice-text-3 {
   font-family: var(--sf-font-secondary);
   font-weight: 700;
-  font-size: 32px; /* Figma: 32 */
-  color: var(--sf-gold);
+  font-size: 48px; /* Figma: 48px for these headings */
+  /* Figma: vertical gold gradient */
+  background: var(--sf-gradient-gold-vertical);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .voice-text-2 {
   font-family: var(--sf-font-body);
-  font-weight: 400; /* Regular */
+  font-weight: 400; /* Figma: Tajawal Regular 400 */
   font-size: 32px;
   line-height: 1.5;
-  color: var(--sf-bg-primary); /* FCFBF8 */
+  color: #F8F5EF;
   text-align: right;
 }
+
 
 .voice-images {
   position: absolute;
@@ -123,8 +129,8 @@
 .voice-img-tall {
   position: absolute;
   top: -163px;
-  right: 964px; /* Figma x: 964 -> which is from left. If container is 1440, right is (1440-964-536) = -60px. Wait, let's use left: 964px */
-  left: 964px;
+  right: 0;
+  left: auto;
   width: 536px;
   height: 803px;
   border-radius: 20px;

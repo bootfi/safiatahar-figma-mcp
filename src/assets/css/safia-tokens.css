@@ -13,8 +13,11 @@
 
   /* Gradients */
   --sf-gradient-gold: linear-gradient(90deg, #F7E59B 0%, #B8975F 100%);
-  --sf-gradient-teal: linear-gradient(135deg, rgba(2, 95, 75, 1) 0%, rgba(2, 61, 54, 1) 50%, rgba(2, 44, 45, 1) 100%);
-  --sf-gradient-teal-footer: linear-gradient(135deg, rgba(2, 95, 75, 1) 0%, rgba(2, 61, 54, 1) 50%);
+  --sf-gradient-gold-btn: linear-gradient(90deg, #F7E59B 50%, #B8975F 100%);
+  --sf-gradient-gold-vertical: linear-gradient(180deg, #B8975F 0%, #F7E59B 100%);
+  --sf-gradient-teal: linear-gradient(135deg, rgba(2, 95, 75, 1) 0%, rgba(2, 61, 54, 1) 35%, rgba(2, 44, 45, 1) 100%);
+  --sf-gradient-teal-footer: linear-gradient(135deg, rgba(2, 95, 75, 1) 0%, rgba(2, 61, 54, 1) 35%, rgba(2, 44, 45, 1) 100%);
+  --sf-gradient-teal-btn: linear-gradient(90deg, rgba(2, 95, 75, 1) 0%, rgba(2, 61, 54, 1) 100%);
   
   /* Typography Variables */
   --sf-font-primary: 'The Year of The Camel', 'Tajawal', sans-serif;

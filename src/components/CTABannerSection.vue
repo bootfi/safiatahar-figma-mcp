@@ -19,7 +19,7 @@
 .cta-banner-section {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 400px; /* Figma: 400px */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,7 +32,7 @@
   width: 100%;
   height: 100%;
   background-image: url('/images/cta-banner-bg.png');
-  background-size: cover;
+  background-size: 100% 100%; /* Figma: STRETCH with crop */
   background-position: center;
   background-repeat: no-repeat;
   z-index: 1;
@@ -44,7 +44,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity for readable text */
+  background-color: rgba(0, 0, 0, 0.2); /* Figma: rgba(0,0,0,0.2) */
   z-index: 2;
 }
 
@@ -55,35 +55,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 24px 80px; /* Figma: 24px 80px */
 }
 
 .cta-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 48px;
+  gap: 32px; /* Figma: 32px */
   text-align: center;
+  width: 496px; /* Figma: 496px */
 }
 
 .cta-title {
   font-family: var(--sf-font-secondary);
   font-weight: 700;
-  font-size: 48px;
-  color: #FFFFFF;
+  font-size: 64px; /* Figma: 64px */
+  color: #F8F5EF;
 }
 
 .cta-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 32px;
-  border-radius: 100px;
-  background-color: var(--sf-teal-deep);
-  color: #fff;
+  padding: 8px 16px;
+  border-radius: 1000px;
+  background: var(--sf-gradient-gold-btn); /* Figma: gold gradient */
+  color: var(--sf-dark); /* Figma: #071B1E */
   font-family: var(--sf-font-secondary);
   font-weight: 700;
   font-size: 16px;
-  width: fit-content;
+  line-height: 1.5em;
+  width: 496px; /* Figma: 496px */
+  height: 48px;
   transition: opacity 0.3s ease;
 }
 
@@ -94,6 +98,9 @@
 @media (max-width: 768px) {
   .cta-banner-section {
     height: 400px;
+    padding: 24px;
+  }
+  .cta-container {
     padding: 24px;
   }
   .cta-content {

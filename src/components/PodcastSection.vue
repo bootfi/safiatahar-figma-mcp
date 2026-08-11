@@ -59,7 +59,7 @@
   font-size: 200px;
   line-height: 1;
   color: var(--sf-ivory-alt);
-  opacity: 0.8;
+  opacity: 0.1; /* Figma: 0.1 */
   pointer-events: none;
   z-index: 1;
   white-space: nowrap;
