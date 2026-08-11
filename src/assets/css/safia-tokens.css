@@ -1,0 +1,133 @@
+:root {
+  /* Brand Colors from Figma */
+  --sf-bg-primary: #FCFBF8;
+  --sf-bg-ivory: #F8F5EF;
+  --sf-teal-deep: #093B33;
+  --sf-teal-muted: #3A625C;
+  --sf-teal-mid: #596668;
+  --sf-gold: #B8975F;
+  --sf-dark: #071B1E;
+  --sf-ivory-alt: #F6F2E9;
+  --sf-gold-light: #CFB994;
+  --sf-accent-pink: #D5B1A8;
+
+  /* Gradients */
+  --sf-gradient-gold: linear-gradient(90deg, #F7E59B 0%, #B8975F 100%);
+  --sf-gradient-teal: linear-gradient(135deg, rgba(2, 95, 75, 1) 0%, rgba(2, 61, 54, 1) 50%, rgba(2, 44, 45, 1) 100%);
+  --sf-gradient-teal-footer: linear-gradient(135deg, rgba(2, 95, 75, 1) 0%, rgba(2, 61, 54, 1) 50%);
+  
+  /* Typography Variables */
+  --sf-font-primary: 'The Year of The Camel', 'Tajawal', sans-serif;
+  --sf-font-secondary: 'Noto Naskh Arabic', serif;
+  --sf-font-body: 'Tajawal', sans-serif;
+  --sf-font-english: 'Prata', serif;
+  --sf-font-system: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+@font-face {
+  font-family: 'The Year of The Camel';
+  src: local('The Year of The Camel Thin'), url('/fonts/TheYearofTheCamel/TheYearofTheCamel-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'The Year of The Camel';
+  src: local('The Year of The Camel ExtraLight'), url('/fonts/TheYearofTheCamel/TheYearofTheCamel-ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'The Year of The Camel';
+  src: local('The Year of The Camel Light'), url('/fonts/TheYearofTheCamel/TheYearofTheCamel-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'The Year of The Camel';
+  src: local('The Year of The Camel Regular'), url('/fonts/TheYearofTheCamel/TheYearofTheCamel-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'The Year of The Camel';
+  src: local('The Year of The Camel Medium'), url('/fonts/TheYearofTheCamel/TheYearofTheCamel-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'The Year of The Camel';
+  src: local('The Year of The Camel Bold'), url('/fonts/TheYearofTheCamel/TheYearofTheCamel-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'The Year of The Camel';
+  src: local('The Year of The Camel ExtraBold'), url('/fonts/TheYearofTheCamel/TheYearofTheCamel-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'The Year of The Camel';
+  src: local('The Year of The Camel ExtraBold'), url('/fonts/TheYearofTheCamel/TheYearofTheCamel-ExtraBold.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base styles combining Design System & Safia tokens */
+body {
+  background-color: var(--sf-bg-primary);
+  color: var(--sf-teal-deep);
+  font-family: var(--sf-font-body);
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Utilities */
+.sf-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .sf-container {
+    max-width: 393px;
+  }
+}
