@@ -88,64 +88,61 @@ const bgImage = computed(() => {
   z-index: 3;
   width: 100%;
   display: flex;
-  padding: 48px 80px; /* Figma: 48px 80px */
+  padding: var(--spacing-xl) var(--spacing-3xl); /* 48px 80px — Spacing-xl Spacing-3xl */
 }
 
 .events-content {
   max-width: 534px;
   display: flex;
   flex-direction: column;
-  gap: 51px; /* Figma: gap 51px */
+  gap: 51px; /* Figma: gap 51px — closest to Spacing-xl 48px */
 }
 
 .events-header {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--spacing-xs);  /* 8px — Spacing-xs */
 }
 
 /* Figma: small label first — Tajawal Regular 400 20px */
 .events-label {
-  font-family: var(--sf-font-body);
-  font-weight: 400;
-  font-size: 20px;
-  color: #F8F5EF;
+  font-family: var(--font-family-secondary);  /* Tajawal */
+  font-weight: var(--font-weight-regular);    /* 400 */
+  font-size: var(--font-size-body);           /* 20px — Font-size-body */
+  color: var(--color-white-400);
   margin: 0;
 }
 
-/* Figma: big title — Noto Naskh Arabic Bold 700 48px */
 .events-title {
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 48px;
-  color: #F8F5EF;
+  font-family: var(--font-family-primary);    /* Noto Naskh Arabic */
+  font-weight: var(--font-weight-bold);       /* 700 */
+  font-size: var(--font-size-xl);             /* 48px — Font-size-xl */
+  color: var(--color-white-400);
 }
 
-/* Figma: Tajawal Medium 500 32px */
 .events-desc {
-  font-family: var(--sf-font-body);
-  font-weight: 500;
-  font-size: 32px;
+  font-family: var(--font-family-secondary);  /* Tajawal */
+  font-weight: var(--font-weight-medium);     /* 500 */
+  font-size: var(--font-size-lg);             /* 32px — Font-size-lg */
   line-height: 1.5;
-  color: #F8F5EF;
+  color: var(--color-white-400);
   margin: 0;
 }
 
-/* Figma: gold gradient button, full-width of content */
 .events-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 16px;
-  border-radius: 1000px;
+  padding: var(--spacing-xs) var(--spacing-sm); /* 8px 16px */
+  border-radius: var(--radius-full);            /* 1000px — Radius-full */
   background: var(--sf-gradient-gold-btn);
-  color: var(--sf-dark);
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 16px;
+  color: var(--color-black-500);
+  font-family: var(--font-family-primary);      /* Noto Naskh Arabic */
+  font-weight: var(--font-weight-bold);         /* 700 */
+  font-size: var(--font-size-sm);               /* 16px — Font-size-sm */
   line-height: 1.5em;
-  height: 48px;
-  width: 100%; /* Figma: alignSelf stretch within 534px content */
+  height: var(--spacing-xl);                    /* 48px — Spacing-xl */
+  width: 100%;
   transition: opacity 0.3s ease;
 }
 
@@ -162,21 +159,21 @@ const bgImage = computed(() => {
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
   }
   .events-container {
-    padding: 48px 24px;
+    padding: var(--spacing-xl) var(--spacing-md); /* 48px 24px */
   }
   .events-content {
-    gap: 32px;
+    gap: var(--spacing-lg);                       /* 32px */
     text-align: center;
     align-items: center;
   }
   .events-title {
-    font-size: 32px;
+    font-size: var(--font-size-lg);               /* 32px */
   }
   .events-label {
-    font-size: 16px;
+    font-size: var(--font-size-sm);               /* 16px */
   }
   .events-desc {
-    font-size: 16px;
+    font-size: var(--font-size-sm);               /* 16px */
   }
   .events-btn {
     width: 100%;

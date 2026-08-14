@@ -82,85 +82,85 @@ const bgImage = computed(() => {
   z-index: 3;
   width: 100%;
   display: flex;
-  padding: 24px 80px; /* Figma: 24px 80px */
+  padding: var(--spacing-md) var(--spacing-3xl); /* 24px 80px */
 }
 
 .consulting-content {
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: var(--spacing-lg);                /* 32px — Spacing-lg */
 }
 
 .consulting-header {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--spacing-xs);                /* 8px — Spacing-xs */
 }
 
 .consulting-title {
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 48px;
-  color: #FFFFFF;
+  font-family: var(--font-family-primary);  /* Noto Naskh Arabic */
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xl);           /* 48px — Font-size-xl */
+  color: #ffffff;
 }
 
 .consulting-subtitle {
-  font-family: var(--sf-font-body);
-  font-weight: 500;
-  font-size: 24px;
-  color: var(--sf-gold);
+  font-family: var(--font-family-secondary); /* Tajawal */
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-base);          /* 24px — Font-size-base */
+  color: var(--color-accent-500);
 }
 
 .consulting-desc {
-  font-family: var(--sf-font-body);
-  font-weight: 500;
-  font-size: 32px; /* Figma: 32px */
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-lg);            /* 32px — Font-size-lg */
   line-height: 1.5;
-  color: var(--sf-teal-deep); /* Figma: #093B33 */
+  color: var(--color-primary-500);
 }
 
 .consulting-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 16px;
-  border-radius: 1000px;
-  background: var(--sf-gradient-teal-btn); /* Figma: teal gradient */
+  padding: var(--spacing-xs) var(--spacing-sm); /* 8px 16px */
+  border-radius: var(--radius-full);            /* 1000px — Radius-full */
+  background: var(--sf-gradient-teal-btn);
   color: #fff;
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 16px;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);               /* 16px — Font-size-sm */
   line-height: 1.5em;
-  width: 100%; /* Figma: alignSelf stretch */
-  height: 48px;
+  width: 100%;
+  height: var(--spacing-xl);                    /* 48px — Spacing-xl */
   transition: all 0.3s ease;
 }
 
 @media (max-width: 768px) {
   .consulting-section {
-    min-height: 931px; /* Mobile bg height */
+    min-height: 931px;
     align-items: flex-end;
   }
   .consulting-overlay {
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
   }
   .consulting-container {
-    padding: 48px 24px;
+    padding: var(--spacing-xl) var(--spacing-md); /* 48px 24px */
   }
   .consulting-content {
-    gap: 24px;
+    gap: var(--spacing-md);                       /* 24px */
     text-align: center;
     align-items: center;
   }
   .consulting-title {
-    font-size: 32px;
+    font-size: var(--font-size-lg);               /* 32px */
   }
   .consulting-subtitle {
-    font-size: 16px;
+    font-size: var(--font-size-sm);               /* 16px */
   }
   .consulting-desc {
-    font-size: 16px;
+    font-size: var(--font-size-sm);               /* 16px */
   }
   .consulting-btn {
     width: 100%;

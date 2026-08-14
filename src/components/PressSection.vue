@@ -32,20 +32,20 @@ const marqueeLogos = [...logos, ...logos, ...logos]
 
 <style scoped>
 .press-section {
-  padding: 24px;
+  padding: var(--spacing-md);              /* 24px — Spacing-md */
   background: var(--sf-gradient-teal);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: var(--spacing-md);                  /* 24px — Spacing-md */
   overflow: hidden;
 }
 
 .press-title {
-  font-family: var(--sf-font-body);
-  font-weight: 500;
-  font-size: 24px;
-  color: var(--sf-bg-primary); /* FCFBF8 */
+  font-family: var(--font-family-secondary); /* Tajawal */
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-base);          /* 24px — Font-size-base */
+  color: var(--color-surface-main);
 }
 
 .press-marquee-wrapper {
@@ -58,7 +58,7 @@ const marqueeLogos = [...logos, ...logos, ...logos]
 .press-marquee {
   display: flex;
   align-items: center;
-  gap: 64px;
+  gap: var(--spacing-2xl);                 /* 64px — Spacing-2xl */
   width: max-content;
   animation: scroll 30s linear infinite;
 }
@@ -88,11 +88,11 @@ const marqueeLogos = [...logos, ...logos, ...logos]
 
 @media (max-width: 768px) {
   .press-section {
-    padding: 24px 0;
-    gap: 24px;
+    padding: var(--spacing-md) 0;
+    gap: var(--spacing-md);
   }
   .press-title {
-    font-size: 20px;
+    font-size: var(--font-size-body);      /* 20px */
   }
   .press-logo-box {
     height: 40px;

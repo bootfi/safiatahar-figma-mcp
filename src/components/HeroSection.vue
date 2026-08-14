@@ -153,14 +153,14 @@ const bgImage = computed(() => {
   left: 96px;
   width: 376px;
   height: 48px;
-  border-radius: 1000px;
-  background: var(--sf-gradient-gold-btn); /* Figma: 50% midpoint */
-  color: var(--sf-dark);
-  font-family: var(--sf-font-secondary); /* Figma: NOTO NASKH ARABIC */
-  font-weight: 700;
-  font-size: 16px; /* Figma: 16px, was 18px */
+  border-radius: var(--radius-full);         /* 1000px — Radius-full */
+  background: var(--sf-gradient-gold-btn);
+  color: var(--color-black-500);
+  font-family: var(--font-family-primary);     /* Noto Naskh Arabic */
+  font-weight: var(--font-weight-bold);        /* 700 */
+  font-size: var(--font-size-sm);              /* 16px — Font-size-sm */
   line-height: 1.5em;
-  padding: 8px 16px; /* Figma: 8px 16px */
+  padding: var(--spacing-xs) var(--spacing-sm); /* 8px 16px */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,10 +235,10 @@ const bgImage = computed(() => {
     left: auto;
     top: auto;
     width: 262px;
-    height: 48px;
-    padding: 12px 32px;
-    font-size: 16px;
-    font-family: var(--sf-font-secondary); /* Match desktop */
+    height: var(--spacing-xl);                    /* 48px — Spacing-xl */
+    padding: 12px var(--spacing-lg);              /* 12px 32px (12 has no token) */
+    font-size: var(--font-size-sm);               /* 16px — Font-size-sm */
+    font-family: var(--font-family-primary);
   }
   .hero-watermark {
     width: 336px;

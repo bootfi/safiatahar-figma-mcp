@@ -51,8 +51,8 @@ const audioItems = [
 
 <style scoped>
 .audio-section {
-  padding: 80px 0;
-  background-color: var(--sf-bg-primary);
+  padding: var(--spacing-3xl) 0;           /* 80px 0 */
+  background-color: var(--color-surface-main);
 }
 
 .audio-container {
@@ -67,26 +67,26 @@ const audioItems = [
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 8px;
+  gap: var(--spacing-xs);                  /* 8px — Spacing-xs */
 }
 
 .audio-title {
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 48px;
-  color: var(--sf-gold);
+  font-family: var(--font-family-primary); /* Noto Naskh Arabic */
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xl);          /* 48px — Font-size-xl */
+  color: var(--color-accent-500);
 }
 
 .audio-subtitle {
-  font-family: var(--sf-font-body);
-  font-weight: 400;
-  font-size: 20px;
-  color: var(--sf-teal-deep);
+  font-family: var(--font-family-secondary); /* Tajawal */
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-body);          /* 20px — Font-size-body */
+  color: var(--color-primary-500);
 }
 
 .audio-list {
   display: flex;
-  gap: 24px;
+  gap: var(--spacing-md);                  /* 24px — Spacing-md */
   width: 100%;
   justify-content: center;
 }
@@ -96,7 +96,7 @@ const audioItems = [
   flex: 1;
   max-width: 411px;
   height: 470px;
-  border-radius: 24px;
+  border-radius: var(--radius-mid);        /* 24px — Radius-mid */
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -117,23 +117,23 @@ const audioItems = [
 .audio-card-content {
   position: relative;
   z-index: 2;
-  padding: 48px 32px; /* Figma: 48px 32px */
+  padding: var(--spacing-xl) var(--spacing-lg); /* 48px 32px */
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--spacing-xs);                       /* 8px — Spacing-xs */
 }
 
 .card-title {
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 32px;
+  font-family: var(--font-family-primary); /* Noto Naskh Arabic */
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);          /* 32px — Font-size-lg */
   color: #fff;
 }
 
 .card-desc {
-  font-family: var(--sf-font-body);
-  font-weight: 400;
-  font-size: 16px;
+  font-family: var(--font-family-secondary); /* Tajawal */
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-sm);            /* 16px — Font-size-sm */
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -149,31 +149,31 @@ const audioItems = [
 
 @media (max-width: 768px) {
   .audio-section {
-    padding: 48px 24px;
+    padding: var(--spacing-xl) var(--spacing-md); /* 48px 24px */
   }
   .audio-title {
-    font-size: 32px;
+    font-size: var(--font-size-lg);              /* 32px */
   }
   .audio-subtitle {
-    font-size: 16px;
+    font-size: var(--font-size-sm);              /* 16px */
   }
   .audio-list {
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: var(--spacing-sm);                      /* 16px */
   }
   .audio-card {
     width: 100%;
     height: 202px;
   }
   .audio-card-content {
-    padding: 24px 16px;
+    padding: var(--spacing-md) var(--spacing-sm); /* 24px 16px */
   }
   .card-title {
-    font-size: 24px;
+    font-size: var(--font-size-base);            /* 24px */
   }
   .card-desc {
-    font-size: 14px;
+    font-size: var(--font-size-xs);              /* 12px (was 14px) */
   }
 }
 </style>

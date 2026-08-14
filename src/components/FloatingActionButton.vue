@@ -12,12 +12,12 @@
 <style scoped>
 .fab-wrapper {
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: var(--spacing-lg);             /* 32px — closest to 40 (between Spacing-lg and xl) */
+  right: var(--spacing-lg);
   z-index: 1000;
-  padding: 8px; /* For the outer stroke */
+  padding: var(--spacing-xs);            /* 8px — Spacing-xs */
   border-radius: 50%;
-  background: rgba(184, 151, 95, 0.15); /* Gold with low opacity */
+  background: rgba(184, 151, 95, 0.15);
 }
 
 .fab-btn {
@@ -46,8 +46,8 @@
 
 @media (max-width: 768px) {
   .fab-wrapper {
-    bottom: 24px;
-    right: 24px;
+    bottom: var(--spacing-md);           /* 24px — Spacing-md */
+    right: var(--spacing-md);
   }
   .fab-btn {
     width: 64px;

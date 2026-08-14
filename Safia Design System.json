@@ -1,0 +1,1609 @@
+[
+  {
+    "Primitives": {
+      "modes": {
+        "Mode 1": {
+          "Colors": {
+            "Primary": {
+              "primary-20": {
+                "$type": "color",
+                "$value": "rgba(9, 59, 51, 0.2)"
+              },
+              "primary-50": {
+                "$type": "color",
+                "$value": "#e6ebeb"
+              },
+              "primary-100": {
+                "$type": "color",
+                "$value": "#b3c2c0"
+              },
+              "primary-200": {
+                "$type": "color",
+                "$value": "#8ea5a1"
+              },
+              "primary-300": {
+                "$type": "color",
+                "$value": "#5a7c76"
+              },
+              "primary-400": {
+                "$type": "color",
+                "$value": "#3a625c"
+              },
+              "primary-500": {
+                "$type": "color",
+                "$value": "#093b33"
+              },
+              "primary-600": {
+                "$type": "color",
+                "$value": "#08362e"
+              },
+              "primary-700": {
+                "$type": "color",
+                "$value": "#062a24"
+              },
+              "primary-800": {
+                "$type": "color",
+                "$value": "#05201c"
+              },
+              "primary-900": {
+                "$type": "color",
+                "$value": "#041915"
+              }
+            },
+            "Accent": {
+              "accent-20": {
+                "$type": "color",
+                "$value": "rgba(184, 151, 95, 0.2)"
+              },
+              "accent-50": {
+                "$type": "color",
+                "$value": "#f8f5ef"
+              },
+              "accent-100": {
+                "$type": "color",
+                "$value": "#e9dfcd"
+              },
+              "accent-200": {
+                "$type": "color",
+                "$value": "#decfb5"
+              },
+              "accent-300": {
+                "$type": "color",
+                "$value": "#cfb994"
+              },
+              "accent-400": {
+                "$type": "color",
+                "$value": "#c6ac7f"
+              },
+              "accent-500": {
+                "$type": "color",
+                "$value": "#b8975f"
+              },
+              "accent-600": {
+                "$type": "color",
+                "$value": "#a78956"
+              },
+              "accent-700": {
+                "$type": "color",
+                "$value": "#836b43"
+              },
+              "accent-800": {
+                "$type": "color",
+                "$value": "#655334"
+              },
+              "accent-900": {
+                "$type": "color",
+                "$value": "#4d3f28"
+              }
+            },
+            "White": {
+              "white-50": {
+                "$type": "color",
+                "$value": "#fefefd"
+              },
+              "white-100": {
+                "$type": "color",
+                "$value": "#fcfbf8"
+              },
+              "white-200": {
+                "$type": "color",
+                "$value": "#fbf9f5"
+              },
+              "white-300": {
+                "$type": "color",
+                "$value": "#f9f6f0"
+              },
+              "white-400": {
+                "$type": "color",
+                "$value": "#f8f5ed"
+              },
+              "white-500": {
+                "$type": "color",
+                "$value": "#f6f2e9"
+              },
+              "white-600": {
+                "$type": "color",
+                "$value": "#e0dcd4"
+              },
+              "white-700": {
+                "$type": "color",
+                "$value": "#afaca5"
+              },
+              "white-800": {
+                "$type": "color",
+                "$value": "#878580"
+              },
+              "white-900": {
+                "$type": "color",
+                "$value": "#676662"
+              }
+            },
+            "Black": {
+              "black-50": {
+                "$type": "color",
+                "$value": "#e6e8e9"
+              },
+              "black-100": {
+                "$type": "color",
+                "$value": "#b2b8b9"
+              },
+              "black-200": {
+                "$type": "color",
+                "$value": "#596668"
+              },
+              "black-300": {
+                "$type": "color",
+                "$value": "#596668"
+              },
+              "black-400": {
+                "$type": "color",
+                "$value": "#39494b"
+              },
+              "black-500": {
+                "$type": "color",
+                "$value": "#071b1e"
+              },
+              "black-600": {
+                "$type": "color",
+                "$value": "#06191b"
+              },
+              "black-700": {
+                "$type": "color",
+                "$value": "#051315"
+              },
+              "black-800": {
+                "$type": "color",
+                "$value": "#040f11"
+              },
+              "black-900": {
+                "$type": "color",
+                "$value": "#030b0d"
+              }
+            },
+            "Danger": {
+              "danger-50": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#fdeeee"
+              },
+              "danger-100": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#f9cbcb"
+              },
+              "danger-200": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#f6b2b2"
+              },
+              "danger-300": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#f28e8e"
+              },
+              "danger-400": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#ef7979"
+              },
+              "danger-500": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#eb5757"
+              },
+              "danger-600": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#d64f4f"
+              },
+              "danger-700": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#a73e3e"
+              },
+              "danger-800": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#813030"
+              },
+              "danger-900": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#632525"
+              }
+            },
+            "Success": {
+              "success-50": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#ecfaf2"
+              },
+              "success-100": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#c4eed8"
+              },
+              "success-200": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#a8e6c5"
+              },
+              "success-300": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#80dbaa"
+              },
+              "success-400": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#67d499"
+              },
+              "success-500": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#41c980"
+              },
+              "success-600": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#3bb774"
+              },
+              "success-700": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#2e8f5b"
+              },
+              "success-800": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#246f46"
+              },
+              "success-900": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#1b5436"
+              }
+            },
+            "Warning": {
+              "warning-50": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#fff6e6"
+              },
+              "warning-100": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#ffe4b0"
+              },
+              "warning-200": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#ffd78a"
+              },
+              "warning-300": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#ffc554"
+              },
+              "warning-400": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#ffb933"
+              },
+              "warning-500": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#ffa800"
+              },
+              "warning-600": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#e89900"
+              },
+              "warning-700": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#b57700"
+              },
+              "warning-800": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#8c5c00"
+              },
+              "warning-900": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#6b4700"
+              }
+            },
+            "Info": {
+              "info-50": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#e6f2ff"
+              },
+              "info-100": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#b0d6ff"
+              },
+              "info-200": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#8ac2ff"
+              },
+              "info-300": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#54a6ff"
+              },
+              "info-400": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#3395ff"
+              },
+              "info-500": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#007aff"
+              },
+              "info-600": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#006fe8"
+              },
+              "info-700": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#0057b5"
+              },
+              "info-800": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#00438c"
+              },
+              "info-900": {
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$value": "#00336b"
+              }
+            }
+          },
+          "Font Family": {
+            "Font Family": {
+              "$hiddenFromPublishing": true,
+              "$type": "string",
+              "$value": "NOTO NASKH ARABIC"
+            },
+            "Secondary Font Family": {
+              "$hiddenFromPublishing": true,
+              "$type": "string",
+              "$value": "Tajawal"
+            }
+          },
+          "Font Weight": {
+            "Light": {
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 300
+            },
+            "Regular": {
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 400
+            },
+            "Midium": {
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 500
+            },
+            "Bold": {
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 700
+            },
+            "Extra Bold": {
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 900
+            }
+          },
+          "Spacing": {
+            "0": {
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 0
+            },
+            "4": {
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 4
+            },
+            "8": {
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 8
+            },
+            "10": {
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 10
+            },
+            "12": {
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 12
+            },
+            "16": {
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 16
+            },
+            "20": {
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 20
+            },
+            "24": {
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 24
+            },
+            "32": {
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 32
+            },
+            "48": {
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 48
+            },
+            "64": {
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 64
+            },
+            "80": {
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 80
+            },
+            "1000": {
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$value": 1000
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Tokens": {
+      "modes": {
+        "Mode 1": {
+          "Spacing": {
+            "Spacing-none": {
+              "$scopes": [
+                "WIDTH_HEIGHT",
+                "GAP",
+                "LINE_HEIGHT",
+                "LETTER_SPACING",
+                "PARAGRAPH_SPACING",
+                "PARAGRAPH_INDENT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.0}"
+            },
+            "Spacing-xxs": {
+              "$scopes": [
+                "WIDTH_HEIGHT",
+                "GAP",
+                "LINE_HEIGHT",
+                "LETTER_SPACING",
+                "PARAGRAPH_SPACING",
+                "PARAGRAPH_INDENT",
+                "FONT_VARIATIONS"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.4}"
+            },
+            "Spacing-xs": {
+              "$scopes": [
+                "WIDTH_HEIGHT",
+                "GAP",
+                "LINE_HEIGHT",
+                "LETTER_SPACING",
+                "PARAGRAPH_SPACING",
+                "PARAGRAPH_INDENT",
+                "FONT_VARIATIONS"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.8}"
+            },
+            "Spacing-sm": {
+              "$scopes": [
+                "WIDTH_HEIGHT",
+                "GAP",
+                "LINE_HEIGHT",
+                "LETTER_SPACING",
+                "PARAGRAPH_SPACING",
+                "PARAGRAPH_INDENT",
+                "FONT_VARIATIONS"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.16}"
+            },
+            "Spacing-md": {
+              "$scopes": [
+                "WIDTH_HEIGHT",
+                "GAP",
+                "LINE_HEIGHT",
+                "LETTER_SPACING",
+                "PARAGRAPH_SPACING",
+                "PARAGRAPH_INDENT",
+                "FONT_VARIATIONS"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.24}"
+            },
+            "Spacing-lg": {
+              "$scopes": [
+                "WIDTH_HEIGHT",
+                "GAP",
+                "LINE_HEIGHT",
+                "LETTER_SPACING",
+                "PARAGRAPH_SPACING",
+                "PARAGRAPH_INDENT",
+                "FONT_VARIATIONS"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.32}"
+            },
+            "Spacing-xl": {
+              "$scopes": [
+                "WIDTH_HEIGHT",
+                "GAP",
+                "LINE_HEIGHT",
+                "LETTER_SPACING",
+                "PARAGRAPH_SPACING",
+                "PARAGRAPH_INDENT",
+                "FONT_VARIATIONS"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.48}"
+            },
+            "Spacing-2xl": {
+              "$scopes": [
+                "WIDTH_HEIGHT",
+                "GAP",
+                "LINE_HEIGHT",
+                "LETTER_SPACING",
+                "PARAGRAPH_SPACING",
+                "PARAGRAPH_INDENT",
+                "FONT_VARIATIONS"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.64}"
+            },
+            "Spacing-3xl": {
+              "$scopes": [
+                "WIDTH_HEIGHT",
+                "GAP",
+                "LINE_HEIGHT",
+                "LETTER_SPACING",
+                "PARAGRAPH_SPACING",
+                "PARAGRAPH_INDENT",
+                "FONT_VARIATIONS"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.80}"
+            },
+            "Spacing-4xl": {
+              "$scopes": [
+                "WIDTH_HEIGHT",
+                "GAP",
+                "LINE_HEIGHT",
+                "LETTER_SPACING",
+                "PARAGRAPH_SPACING",
+                "PARAGRAPH_INDENT",
+                "FONT_VARIATIONS"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.1000}"
+            }
+          },
+          "Radius": {
+            "Radius-none": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.0}"
+            },
+            "Radius-sm": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.8}"
+            },
+            "Radius-mid-mobile": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.16}"
+            },
+            "Radius-mid": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.24}"
+            },
+            "Radius-full": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.1000}"
+            }
+          },
+          "Font Size": {
+            "Font-size-xxs": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.10}"
+            },
+            "Font-size-xs": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.12}"
+            },
+            "Font-size-sm": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.16}"
+            },
+            "Font-size-body": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.20}"
+            },
+            "Font-size-base": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.24}"
+            },
+            "Font-size-lg": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.32}"
+            },
+            "Font-size-xl": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.48}"
+            },
+            "Font-size-2xl": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.64}"
+            },
+            "Font-size-3xl": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Spacing.80}"
+            }
+          },
+          "Font Weight": {
+            "Font-weight-light": {
+              "$scopes": [
+                "FONT_WEIGHT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Font Weight.Light}"
+            },
+            "Font-weight-regular": {
+              "$scopes": [
+                "FONT_WEIGHT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Font Weight.Regular}"
+            },
+            "Font-weight-midium": {
+              "$scopes": [
+                "FONT_WEIGHT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Font Weight.Midium}"
+            },
+            "Font-weight-bold": {
+              "$scopes": [
+                "FONT_WEIGHT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Font Weight.Bold}"
+            },
+            "Font-weight-extrabold": {
+              "$scopes": [
+                "FONT_WEIGHT"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Font Weight.Extra Bold}"
+            }
+          },
+          "Font Family": {
+            "Font-family": {
+              "$scopes": [
+                "TEXT_CONTENT",
+                "FONT_FAMILY"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "string",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Font Family.Font Family}"
+            },
+            "Secondary-font-family": {
+              "$scopes": [
+                "TEXT_CONTENT",
+                "FONT_FAMILY"
+              ],
+              "$hiddenFromPublishing": true,
+              "$type": "string",
+              "$libraryName": "",
+              "$collectionName": "Primitives",
+              "$value": "{Font Family.Secondary Font Family}"
+            }
+          },
+          "Colors": {
+            "Surface": {
+              "Surface-main": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.White.white-100}"
+              },
+              "Surface-secondary": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Accent.accent-50}"
+              },
+              "Surface-white": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.White.white-50}"
+              },
+              "Surface-primary": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Primary.primary-500}"
+              },
+              "Surface-accent": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Accent.accent-300}"
+              },
+              "Surface-transparent-primary": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Primary.primary-20}"
+              },
+              "Surface-transparent-accent": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Accent.accent-20}"
+              },
+              "Surface-danger": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Danger.danger-50}"
+              },
+              "Surface-success": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Success.success-50}"
+              },
+              "Surface-warning": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Warning.warning-50}"
+              },
+              "Surface-info": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Info.info-50}"
+              },
+              "gradient-primary-stop0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#025f4b"
+              },
+              "gradient-primary-stop50": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#023d36"
+              },
+              "gradient-primary-stop100": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#022c2d"
+              },
+              "gradient-secondary-stop1": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#b8975f"
+              },
+              "gradient-secondary-stop2": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#f7e59b"
+              }
+            },
+            "Text": {
+              "Text-titles": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Primary.primary-500}"
+              },
+              "Text-dark": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Black.black-500}"
+              },
+              "Text-body": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Primary.primary-400}"
+              },
+              "Text-accent": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Accent.accent-500}"
+              },
+              "Text-description": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Black.black-200}"
+              },
+              "Text-inverted": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Accent.accent-50}"
+              },
+              "Text-success": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Success.success-500}"
+              },
+              "Text-danger": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Danger.danger-500}"
+              },
+              "Text-warning": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Warning.warning-500}"
+              },
+              "Text-info": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Info.info-500}"
+              }
+            },
+            "Icons": {
+              "Icons-default": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Primary.primary-400}"
+              },
+              "Icons-accent": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Accent.accent-500}"
+              },
+              "Icons-disabled": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Black.black-200}"
+              },
+              "Icons-tertiary": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Primary.primary-400}"
+              },
+              "Icons-inverted": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Accent.accent-50}"
+              },
+              "Icons-danger": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Danger.danger-500}"
+              },
+              "Icons-success": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Success.success-500}"
+              },
+              "Icons-warning": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Warning.warning-500}"
+              },
+              "Icons-info": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Info.info-500}"
+              },
+              "Icons-stars": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#e7d58a"
+              }
+            },
+            "Border": {
+              "Border-primary": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Primary.primary-500}"
+              },
+              "Border-accent": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Accent.accent-500}"
+              },
+              "Border-inverted": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.White.white-400}"
+              },
+              "Border-success": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Success.success-500}"
+              },
+              "Border-danger": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Danger.danger-500}"
+              },
+              "Border-warning": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Warning.warning-500}"
+              },
+              "Border-info": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$hiddenFromPublishing": true,
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitives",
+                "$value": "{Colors.Info.info-500}"
+              }
+            },
+            "Buttons": {
+              "Primary": {
+                "btn-bg-primary-default": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Primary.primary-500}"
+                },
+                "btn-bg-primary-hover": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Primary.primary-400}"
+                },
+                "btn-bg-primary-focused": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Primary.primary-600}"
+                },
+                "btn-bg-primary-disabled": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Primary.primary-50}"
+                },
+                "btn-text-primary-default": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.White.white-50}"
+                },
+                "btn-text-primary-hover": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.White.white-50}"
+                },
+                "btn-text-primary-focused": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.White.white-50}"
+                },
+                "btn-text-primary-disabled": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Black.black-200}"
+                },
+                "btn-icons-primary-default": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.White.white-50}"
+                },
+                "btn-icons-primary-hover": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.White.white-50}"
+                },
+                "btn-icons-primary-focused": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.White.white-50}"
+                },
+                "btn-icons-primary-disabled": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Black.black-200}"
+                }
+              },
+              "Secondary": {
+                "btn-bg-secondary-default": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Accent.accent-500}"
+                },
+                "btn-bg-secondary-hover": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Accent.accent-400}"
+                },
+                "btn-bg-secondary-focused": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Accent.accent-600}"
+                },
+                "btn-bg-secondary-disabled": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Primary.primary-50}"
+                },
+                "btn-text-secondary-default": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Black.black-500}"
+                },
+                "btn-text-secondary-hover": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Black.black-500}"
+                },
+                "btn-text-secondary-focused": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Black.black-500}"
+                },
+                "btn-text-secondary-disabled": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Black.black-200}"
+                },
+                "btn-icons-secondary-default": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Black.black-500}"
+                },
+                "btn-icons-secondary-hover": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Black.black-500}"
+                },
+                "btn-icons-secondary-focused": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Black.black-500}"
+                },
+                "btn-icons-secondary-disabled": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Black.black-200}"
+                }
+              },
+              "Text": {
+                "btn-text-text-default": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Black.black-500}"
+                },
+                "btn-text-text-hover": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Black.black-500}"
+                },
+                "btn-text-text-focused": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Black.black-500}"
+                },
+                "btn-text-text-disabled": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Black.black-200}"
+                },
+                "btn-icons-text-default": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Black.black-500}"
+                },
+                "btn-icons-text-hover": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Black.black-500}"
+                },
+                "btn-icons-text-focused": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Black.black-500}"
+                },
+                "btn-icons-text-disabled": {
+                  "$scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "$type": "color",
+                  "$libraryName": "",
+                  "$collectionName": "Primitives",
+                  "$value": "{Colors.Black.black-200}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

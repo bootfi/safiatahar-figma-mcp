@@ -1,32 +1,222 @@
-:root {
-  /* Brand Colors from Figma */
-  --sf-bg-primary: #FCFBF8;
-  --sf-bg-ivory: #F8F5EF;
-  --sf-teal-deep: #093B33;
-  --sf-teal-muted: #3A625C;
-  --sf-teal-mid: #596668;
-  --sf-gold: #B8975F;
-  --sf-dark: #071B1E;
-  --sf-ivory-alt: #F6F2E9;
-  --sf-gold-light: #CFB994;
-  --sf-accent-pink: #D5B1A8;
+/* =============================================================
+   SAFIA DESIGN SYSTEM — CSS CUSTOM PROPERTIES
+   Source: Safia Design System.json (Figma Token Studio export)
+   Last updated: 2026-08-14
+   ============================================================= */
 
-  /* Gradients */
-  --sf-gradient-gold: linear-gradient(90deg, #F7E59B 0%, #B8975F 100%);
-  --sf-gradient-gold-btn: linear-gradient(90deg, #F7E59B 50%, #B8975F 100%);
-  --sf-gradient-gold-vertical: linear-gradient(180deg, #B8975F 0%, #F7E59B 100%);
-  --sf-gradient-teal: linear-gradient(135deg, rgba(2, 95, 75, 1) 0%, rgba(2, 61, 54, 1) 35%, rgba(2, 44, 45, 1) 100%);
-  --sf-gradient-teal-footer: linear-gradient(135deg, rgba(2, 95, 75, 1) 0%, rgba(2, 61, 54, 1) 35%, rgba(2, 44, 45, 1) 100%);
-  --sf-gradient-teal-btn: linear-gradient(90deg, rgba(2, 95, 75, 1) 0%, rgba(2, 61, 54, 1) 100%);
-  
-  /* Typography Variables */
-  --sf-font-primary: 'The Year of The Camel', 'Tajawal', sans-serif;
-  --sf-font-secondary: 'Noto Naskh Arabic', serif;
-  --sf-font-body: 'Tajawal', sans-serif;
-  --sf-font-english: 'Prata', serif;
-  --sf-font-system: 'IBM Plex Sans Arabic', sans-serif;
+/* ─────────────────────────────────────────────
+   PRIMITIVES — Raw Values
+   ───────────────────────────────────────────── */
+:root {
+
+  /* ── Spacing Tokens ──────────────────────────
+     Mapping: Spacing-xxs → Spacing-4xl
+     استخدمها في: gap, padding, margin (عند الضرورة)
+  ──────────────────────────────────────────── */
+  --spacing-none:   0px;
+  --spacing-xxs:    4px;   /* Spacing-xxs  — Primitives.Spacing.4   */
+  --spacing-xs:     8px;   /* Spacing-xs   — Primitives.Spacing.8   */
+  --spacing-10:     10px;  /* Primitives.Spacing.10 (font only)     */
+  --spacing-12:     12px;  /* Primitives.Spacing.12 (font only)     */
+  --spacing-sm:     16px;  /* Spacing-sm   — Primitives.Spacing.16  */
+  --spacing-20:     20px;  /* Primitives.Spacing.20 (font only)     */
+  --spacing-md:     24px;  /* Spacing-md   — Primitives.Spacing.24  */
+  --spacing-lg:     32px;  /* Spacing-lg   — Primitives.Spacing.32  */
+  --spacing-xl:     48px;  /* Spacing-xl   — Primitives.Spacing.48  */
+  --spacing-2xl:    64px;  /* Spacing-2xl  — Primitives.Spacing.64  */
+  --spacing-3xl:    80px;  /* Spacing-3xl  — Primitives.Spacing.80  */
+  --spacing-4xl:    1000px;/* Spacing-4xl  — Primitives.Spacing.1000*/
+
+  /* ── Radius Tokens ───────────────────────────
+     استخدمها في: border-radius حصراً
+  ──────────────────────────────────────────── */
+  --radius-none:       0px;    /* Radius-none       */
+  --radius-sm:         8px;    /* Radius-sm         */
+  --radius-mid-mobile: 16px;   /* Radius-mid-mobile */
+  --radius-mid:        24px;   /* Radius-mid        */
+  --radius-full:       1000px; /* Radius-full       */
+
+  /* ── Font Size Tokens ────────────────────────
+     استخدمها في: font-size حصراً
+  ──────────────────────────────────────────── */
+  --font-size-xxs:  10px;  /* Font-size-xxs  */
+  --font-size-xs:   12px;  /* Font-size-xs   */
+  --font-size-sm:   16px;  /* Font-size-sm   */
+  --font-size-body: 20px;  /* Font-size-body */
+  --font-size-base: 24px;  /* Font-size-base */
+  --font-size-lg:   32px;  /* Font-size-lg   */
+  --font-size-xl:   48px;  /* Font-size-xl   */
+  --font-size-2xl:  64px;  /* Font-size-2xl  */
+  --font-size-3xl:  80px;  /* Font-size-3xl  */
+
+  /* ── Font Weight Tokens ──────────────────────*/
+  --font-weight-light:     300;  /* Font-weight-light     */
+  --font-weight-regular:   400;  /* Font-weight-regular   */
+  --font-weight-medium:    500;  /* Font-weight-midium    */
+  --font-weight-bold:      700;  /* Font-weight-bold      */
+  --font-weight-extrabold: 900;  /* Font-weight-extrabold */
+
+  /* ── Font Family Tokens ──────────────────────*/
+  --font-family-primary:   'Noto Naskh Arabic', serif;   /* Font-family (NOTO NASKH ARABIC) */
+  --font-family-secondary: 'Tajawal', sans-serif;         /* Secondary-font-family           */
+
+  /* ─────────────────────────────────────────────
+     SEMANTIC COLOR TOKENS — From Tokens collection
+     ───────────────────────────────────────────── */
+
+  /* ── Primitive Colors ── */
+  /* Primary palette */
+  --color-primary-20:  rgba(9, 59, 51, 0.2);
+  --color-primary-50:  #e6ebeb;
+  --color-primary-100: #b3c2c0;
+  --color-primary-200: #8ea5a1;
+  --color-primary-300: #5a7c76;
+  --color-primary-400: #3a625c;
+  --color-primary-500: #093b33;
+  --color-primary-600: #08362e;
+  --color-primary-700: #062a24;
+  --color-primary-800: #05201c;
+  --color-primary-900: #041915;
+
+  /* Accent palette (gold) */
+  --color-accent-20:  rgba(184, 151, 95, 0.2);
+  --color-accent-50:  #f8f5ef;
+  --color-accent-100: #e9dfcd;
+  --color-accent-200: #decfb5;
+  --color-accent-300: #cfb994;
+  --color-accent-400: #c6ac7f;
+  --color-accent-500: #b8975f;
+  --color-accent-600: #a78956;
+  --color-accent-700: #836b43;
+  --color-accent-800: #655334;
+  --color-accent-900: #4d3f28;
+
+  /* White palette (warm whites) */
+  --color-white-50:  #fefefd;
+  --color-white-100: #fcfbf8;
+  --color-white-200: #fbf9f5;
+  --color-white-300: #f9f6f0;
+  --color-white-400: #f8f5ed;
+  --color-white-500: #f6f2e9;
+  --color-white-600: #e0dcd4;
+  --color-white-700: #afaca5;
+  --color-white-800: #878580;
+  --color-white-900: #676662;
+
+  /* Black palette (dark teal-blacks) */
+  --color-black-50:  #e6e8e9;
+  --color-black-100: #b2b8b9;
+  --color-black-200: #596668;
+  --color-black-300: #596668;
+  --color-black-400: #39494b;
+  --color-black-500: #071b1e;
+  --color-black-600: #06191b;
+  --color-black-700: #051315;
+  --color-black-800: #040f11;
+  --color-black-900: #030b0d;
+
+  /* ── Surface Tokens ─────────────────────────*/
+  --color-surface-main:               var(--color-white-100);     /* #fcfbf8 */
+  --color-surface-secondary:          var(--color-accent-50);     /* #f8f5ef */
+  --color-surface-white:              var(--color-white-50);      /* #fefefd */
+  --color-surface-primary:            var(--color-primary-500);   /* #093b33 */
+  --color-surface-accent:             var(--color-accent-300);    /* #cfb994 */
+  --color-surface-transparent-primary:var(--color-primary-20);   /* rgba(9,59,51,0.2) */
+  --color-surface-transparent-accent: var(--color-accent-20);    /* rgba(184,151,95,0.2) */
+  --color-surface-danger:             #fdeeee;
+  --color-surface-success:            #ecfaf2;
+  --color-surface-warning:            #fff6e6;
+  --color-surface-info:               #e6f2ff;
+
+  /* ── Text Tokens ────────────────────────────*/
+  --color-text-titles:      var(--color-primary-500);  /* #093b33 */
+  --color-text-dark:        var(--color-black-500);    /* #071b1e */
+  --color-text-body:        var(--color-primary-400);  /* #3a625c */
+  --color-text-accent:      var(--color-accent-500);   /* #b8975f */
+  --color-text-description: var(--color-black-200);    /* #596668 */
+  --color-text-inverted:    var(--color-accent-50);    /* #f8f5ef */
+  --color-text-success:     #41c980;
+  --color-text-danger:      #eb5757;
+  --color-text-warning:     #ffa800;
+  --color-text-info:        #007aff;
+
+  /* ── Icons Tokens ───────────────────────────*/
+  --color-icons-default:  var(--color-primary-400);
+  --color-icons-accent:   var(--color-accent-500);
+  --color-icons-disabled: var(--color-black-200);
+  --color-icons-inverted: var(--color-accent-50);
+  --color-icons-danger:   #eb5757;
+  --color-icons-success:  #41c980;
+  --color-icons-warning:  #ffa800;
+  --color-icons-info:     #007aff;
+  --color-icons-stars:    #e7d58a;
+
+  /* ── Border Tokens ──────────────────────────*/
+  --color-border-primary:  var(--color-primary-500);
+  --color-border-accent:   var(--color-accent-500);
+  --color-border-inverted: var(--color-white-400);
+  --color-border-success:  #41c980;
+  --color-border-danger:   #eb5757;
+  --color-border-warning:  #ffa800;
+  --color-border-info:     #007aff;
+
+  /* ── Button Tokens ──────────────────────────*/
+  /* Primary button */
+  --btn-bg-primary-default:   var(--color-primary-500);
+  --btn-bg-primary-hover:     var(--color-primary-400);
+  --btn-bg-primary-focused:   var(--color-primary-600);
+  --btn-bg-primary-disabled:  var(--color-primary-50);
+  --btn-text-primary-default: var(--color-white-50);
+  --btn-text-primary-disabled:var(--color-black-200);
+  /* Secondary button (accent/gold) */
+  --btn-bg-secondary-default:   var(--color-accent-500);
+  --btn-bg-secondary-hover:     var(--color-accent-400);
+  --btn-bg-secondary-focused:   var(--color-accent-600);
+  --btn-bg-secondary-disabled:  var(--color-primary-50);
+  --btn-text-secondary-default: var(--color-black-500);
+  --btn-text-secondary-disabled:var(--color-black-200);
+
+  /* ── Gradient Tokens ────────────────────────*/
+  --gradient-primary-stop0:    #025f4b;
+  --gradient-primary-stop50:   #023d36;
+  --gradient-primary-stop100:  #022c2d;
+  --gradient-secondary-stop1:  #b8975f;
+  --gradient-secondary-stop2:  #f7e59b;
+
+  /* ─────────────────────────────────────────────
+     LEGACY VARIABLES — Kept for backward compat.
+     (mapped to new semantic tokens above)
+     ───────────────────────────────────────────── */
+  --sf-bg-primary:    var(--color-surface-main);       /* #fcfbf8 */
+  --sf-bg-ivory:      var(--color-surface-secondary);  /* #f8f5ef */
+  --sf-teal-deep:     var(--color-primary-500);        /* #093b33 */
+  --sf-teal-muted:    var(--color-primary-400);        /* #3a625c */
+  --sf-teal-mid:      var(--color-black-200);          /* #596668 */
+  --sf-gold:          var(--color-accent-500);         /* #b8975f */
+  --sf-dark:          var(--color-black-500);          /* #071b1e */
+  --sf-ivory-alt:     var(--color-white-500);          /* #f6f2e9 */
+  --sf-gold-light:    var(--color-accent-300);         /* #cfb994 */
+  --sf-accent-pink:   #D5B1A8;
+
+  /* Gradients (legacy) */
+  --sf-gradient-gold:          linear-gradient(90deg, var(--gradient-secondary-stop2) 0%, var(--gradient-secondary-stop1) 100%);
+  --sf-gradient-gold-btn:      linear-gradient(90deg, var(--gradient-secondary-stop2) 50%, var(--gradient-secondary-stop1) 100%);
+  --sf-gradient-gold-vertical: linear-gradient(180deg, var(--gradient-secondary-stop1) 0%, var(--gradient-secondary-stop2) 100%);
+  --sf-gradient-teal:          linear-gradient(135deg, var(--gradient-primary-stop0) 0%, var(--gradient-primary-stop50) 35%, var(--gradient-primary-stop100) 100%);
+  --sf-gradient-teal-footer:   linear-gradient(135deg, var(--gradient-primary-stop0) 0%, var(--gradient-primary-stop50) 35%, var(--gradient-primary-stop100) 100%);
+  --sf-gradient-teal-btn:      linear-gradient(90deg, var(--gradient-primary-stop0) 0%, var(--gradient-primary-stop50) 100%);
+
+  /* Typography (legacy) */
+  --sf-font-primary:   'The Year of The Camel', 'Tajawal', sans-serif;
+  --sf-font-secondary: var(--font-family-primary);   /* Noto Naskh Arabic */
+  --sf-font-body:      var(--font-family-secondary); /* Tajawal            */
+  --sf-font-english:   'Prata', serif;
+  --sf-font-system:    'IBM Plex Sans Arabic', sans-serif;
 }
 
+/* ─────────────────────────────────────────────
+   CUSTOM FONTS
+   ───────────────────────────────────────────── */
 @font-face {
   font-family: 'The Year of The Camel';
   src: local('The Year of The Camel Thin'), url('/fonts/TheYearofTheCamel/TheYearofTheCamel-Thin.otf') format('opentype');
@@ -34,7 +224,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'The Year of The Camel';
   src: local('The Year of The Camel ExtraLight'), url('/fonts/TheYearofTheCamel/TheYearofTheCamel-ExtraLight.otf') format('opentype');
@@ -42,7 +231,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'The Year of The Camel';
   src: local('The Year of The Camel Light'), url('/fonts/TheYearofTheCamel/TheYearofTheCamel-Light.otf') format('opentype');
@@ -50,7 +238,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'The Year of The Camel';
   src: local('The Year of The Camel Regular'), url('/fonts/TheYearofTheCamel/TheYearofTheCamel-Regular.otf') format('opentype');
@@ -58,7 +245,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'The Year of The Camel';
   src: local('The Year of The Camel Medium'), url('/fonts/TheYearofTheCamel/TheYearofTheCamel-Medium.otf') format('opentype');
@@ -66,7 +252,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'The Year of The Camel';
   src: local('The Year of The Camel Bold'), url('/fonts/TheYearofTheCamel/TheYearofTheCamel-Bold.otf') format('opentype');
@@ -74,7 +259,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'The Year of The Camel';
   src: local('The Year of The Camel ExtraBold'), url('/fonts/TheYearofTheCamel/TheYearofTheCamel-ExtraBold.otf') format('opentype');
@@ -82,7 +266,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'The Year of The Camel';
   src: local('The Year of The Camel ExtraBold'), url('/fonts/TheYearofTheCamel/TheYearofTheCamel-ExtraBold.otf') format('opentype');
@@ -91,11 +274,13 @@
   font-display: swap;
 }
 
-/* Base styles combining Design System & Safia tokens */
+/* ─────────────────────────────────────────────
+   BASE STYLES
+   ───────────────────────────────────────────── */
 body {
-  background-color: var(--sf-bg-primary);
-  color: var(--sf-teal-deep);
-  font-family: var(--sf-font-body);
+  background-color: var(--color-surface-main);
+  color: var(--color-primary-500);
+  font-family: var(--font-family-secondary); /* Tajawal */
   direction: rtl;
   margin: 0;
   padding: 0;
@@ -122,7 +307,9 @@ button {
   box-sizing: border-box;
 }
 
-/* Utilities */
+/* ─────────────────────────────────────────────
+   LAYOUT UTILITIES
+   ───────────────────────────────────────────── */
 .sf-container {
   max-width: 1440px;
   margin: 0 auto;

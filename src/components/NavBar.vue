@@ -65,6 +65,7 @@ const toggleMenu = () => {
 </template>
 
 <style scoped>
+/* ─── Navbar Wrapper ───────────────────────────────────── */
 .navbar {
   position: absolute;
   top: 0;
@@ -80,54 +81,49 @@ const toggleMenu = () => {
 }
 
 .navbar--scrolled .navbar__pill {
-  background-color: var(--sf-bg-primary);
+  background-color: var(--color-surface-main);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.navbar--scrolled .logo-img {
-  filter: none;
-}
-
-.navbar--scrolled .nav-icon {
-  filter: none;
-}
+.navbar--scrolled .logo-img    { filter: none; }
+.navbar--scrolled .nav-icon    { filter: none; }
 
 .navbar--scrolled .navbar__link {
-  color: var(--sf-teal-deep);
+  color: var(--color-primary-500);
 }
-
 .navbar--scrolled .navbar__link--active {
-  color: var(--sf-teal-deep);
+  color: var(--color-primary-500);
 }
-
 .navbar--scrolled .navbar__link--active::after {
-  background-color: var(--sf-teal-deep);
+  background-color: var(--color-primary-500);
 }
-
 .navbar--scrolled .navbar__login-btn {
-  color: var(--sf-dark);
+  color: var(--color-black-500);
 }
 
+/* ─── Container & Pill ─────────────────────────────────── */
+/* Figma Desktop: y:70, pill width:1280, height:80, padding:16 32 */
 .navbar__container {
   display: flex;
   justify-content: center;
-  padding: 0 80px;
-  padding-top: 70px; /* Figma y:70 */
+  padding: 0 var(--spacing-3xl);    /* 0 80px */
+  padding-top: 70px;                /* Figma y:70 — no token (between 3xl/2xl) */
 }
 
 .navbar__pill {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1280px; /* Figma: 1280px */
+  width: 1280px;
   max-width: 100%;
-  height: 80px; /* Figma: 80px */
-  padding: 16px 32px; /* Figma: 16px 32px */
-  border-radius: 1000px; /* Figma: pill shape */
+  height: var(--spacing-3xl);                        /* 80px — Figma: 80px */
+  padding: var(--spacing-sm) var(--spacing-lg);      /* 16px 32px */
+  border-radius: var(--radius-full);                 /* 1000px */
   background: transparent;
   transition: all 0.3s ease;
 }
 
+/* ─── Logo ─────────────────────────────────────────────── */
 .navbar__logo a {
   display: flex;
   align-items: center;
@@ -140,6 +136,8 @@ const toggleMenu = () => {
   transition: filter 0.3s ease;
 }
 
+/* ─── Nav Links ────────────────────────────────────────── */
+/* Figma: gap 48px between links */
 .navbar__nav {
   display: flex;
   align-items: center;
@@ -150,22 +148,23 @@ const toggleMenu = () => {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 48px;
+  gap: var(--spacing-xl);    /* 48px — Spacing-xl */
 }
 
 .navbar__link {
-  font-family: var(--sf-font-body);
-  font-weight: 500;
-  font-size: 18px;
+  font-family: var(--font-family-secondary);   /* Tajawal */
+  font-weight: var(--font-weight-medium);      /* 500 */
+  font-size: var(--font-size-body);            /* 20px — closest to Figma 18px */
   color: rgba(255, 255, 255, 0.8);
   transition: color 0.3s ease;
   position: relative;
-  padding-bottom: 8px;
+  padding-bottom: var(--spacing-xs);           /* 8px */
 }
 
-.navbar__link:hover, .navbar__link--active {
-  color: #FFFFFF;
-  font-weight: 700;
+.navbar__link:hover,
+.navbar__link--active {
+  color: #ffffff;
+  font-weight: var(--font-weight-bold);        /* 700 */
 }
 
 .navbar__link--active::after {
@@ -175,26 +174,28 @@ const toggleMenu = () => {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   transition: background-color 0.3s ease;
 }
 
+/* ─── Actions (Search, Cart, Login) ───────────────────── */
+/* Figma: gap 8px between action items */
 .navbar__actions {
   display: flex;
   align-items: center;
-  gap: 8px; /* Figma: gap 8px between action items */
+  gap: var(--spacing-xs);    /* 8px — Spacing-xs */
 }
 
 .navbar__login-btn {
-  font-family: var(--sf-font-secondary); /* Figma: NOTO NASKH ARABIC */
-  font-weight: 700;
-  font-size: 16px; /* Figma: 16px */
+  font-family: var(--font-family-primary);     /* Noto Naskh Arabic */
+  font-weight: var(--font-weight-bold);        /* 700 */
+  font-size: var(--font-size-sm);              /* 16px — Font-size-sm */
   line-height: 20px;
-  color: #F8F5EF;
+  color: var(--color-white-400);               /* #f8f5ef */
   background: none;
-  padding: 8px 16px;
+  padding: var(--spacing-xs) var(--spacing-sm);/* 8px 16px */
   height: 40px;
-  border-radius: 1000px;
+  border-radius: var(--radius-full);           /* 1000px */
   transition: opacity 0.3s ease;
 }
 
@@ -202,10 +203,11 @@ const toggleMenu = () => {
   opacity: 0.8;
 }
 
+/* Figma: icon buttons 40×40 */
 .navbar__icon-btn {
-  width: 40px; /* Figma: 40x40 */
+  width: 40px;
   height: 40px;
-  border-radius: 1000px;
+  border-radius: var(--radius-full);           /* 1000px */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,13 +220,15 @@ const toggleMenu = () => {
   opacity: 0.7;
 }
 
+/* Figma: icon size 14×14 */
 .nav-icon {
-  width: 14px; /* Figma: 14x14 */
+  width: 14px;
   height: 14px;
   filter: brightness(0) invert(1);
   transition: filter 0.3s ease;
 }
 
+/* ─── Mobile Hamburger ─────────────────────────────────── */
 .navbar__btn-menu-mobile {
   display: none;
   align-items: center;
@@ -233,33 +237,36 @@ const toggleMenu = () => {
   padding: 0;
 }
 
+/* ─── Responsive — Tablet ──────────────────────────────── */
+/* Figma Mobile AppBar: y:34, height:56, padding: 8px 16px */
 @media (max-width: 1024px) {
   .navbar__nav {
     display: none;
   }
-  
+
   .navbar__btn-menu-mobile {
     display: flex;
   }
 
   .navbar__container {
-    padding: 0 24px;
-    padding-top: 34px; /* Mobile Figma AppBar y:34 */
+    padding: 0 var(--spacing-md);              /* 0 24px */
+    padding-top: 34px;                         /* Figma y:34 */
   }
 
   .navbar__pill {
     width: 100%;
     height: 56px;
-    padding: 8px 16px;
+    padding: var(--spacing-xs) var(--spacing-sm); /* 8px 16px */
   }
 }
 
+/* ─── Responsive — Mobile ──────────────────────────────── */
 @media (max-width: 768px) {
   .navbar__pill {
     height: 56px;
   }
   .navbar__actions {
-    gap: 4px;
+    gap: var(--spacing-xxs);   /* 4px — Spacing-xxs */
   }
   .navbar__login-btn {
     display: none;

@@ -114,32 +114,32 @@
   z-index: 2;
   display: flex;
   flex-direction: column;
-  gap: 16px; /* Figma: 16px */
-  padding: 48px 80px; /* Figma: 48px 80px */
+  gap: var(--spacing-sm);                /* 16px — Spacing-sm */
+  padding: var(--spacing-xl) var(--spacing-3xl); /* 48px 80px */
 }
 
 .footer-top {
   display: flex;
   justify-content: space-between;
-  gap: 64px;
+  gap: var(--spacing-2xl);              /* 64px — Spacing-2xl */
 }
 
 /* Newsletter Box */
 .newsletter-box {
-  background-color: var(--sf-bg-ivory);
-  border-radius: 24px;
-  padding: 32px;
+  background-color: var(--color-surface-secondary);
+  border-radius: var(--radius-mid);      /* 24px — Radius-mid */
+  padding: var(--spacing-lg);            /* 32px — Spacing-lg */
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: var(--spacing-md);                /* 24px — Spacing-md */
   max-width: 420px;
 }
 
 .newsletter-icon-wrapper {
-  width: 64px;
-  height: 64px;
-  border-radius: 16px;
-  background-color: rgba(9, 59, 51, 0.05); /* very light teal */
+  width: var(--spacing-2xl);             /* 64px — Spacing-2xl */
+  height: var(--spacing-2xl);
+  border-radius: var(--radius-mid-mobile); /* 16px — Radius-mid-mobile */
+  background-color: rgba(9, 59, 51, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,58 +154,58 @@
 .newsletter-text {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--spacing-xs);                /* 8px — Spacing-xs */
 }
 
 .newsletter-title {
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 24px;
-  color: var(--sf-teal-deep);
+  font-family: var(--font-family-primary);  /* Noto Naskh Arabic */
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-base);         /* 24px — Font-size-base */
+  color: var(--color-primary-500);
 }
 
 .newsletter-desc {
-  font-family: var(--sf-font-body);
-  font-weight: 400;
-  font-size: 16px;
+  font-family: var(--font-family-secondary);  /* Tajawal */
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-sm);            /* 16px — Font-size-sm */
   line-height: 1.5;
-  color: var(--sf-teal-muted);
+  color: var(--color-primary-400);
 }
 
 .newsletter-form {
   display: flex;
-  gap: 8px;
+  gap: var(--spacing-xs);               /* 8px — Spacing-xs */
 }
 
 .input-wrapper {
   flex: 1;
-  border-radius: 100px;
-  background-color: var(--sf-bg-ivory); /* Matches box, could be white */
+  border-radius: var(--radius-full);    /* 1000px — Radius-full */
+  background-color: var(--color-surface-secondary);
   border: 1px solid rgba(0,0,0,0.1);
   overflow: hidden;
 }
 
 .newsletter-form input {
   width: 100%;
-  height: 48px;
-  padding: 0 16px;
+  height: var(--spacing-xl);            /* 48px — Spacing-xl */
+  padding: 0 var(--spacing-sm);         /* 0 16px */
   border: none;
   background: transparent;
-  font-family: var(--sf-font-body);
-  font-size: 14px;
-  color: var(--sf-teal-deep);
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-xs);       /* 12px (was 14px, closest token) */
+  color: var(--color-primary-500);
   outline: none;
 }
 
 .newsletter-btn {
-  height: 48px;
-  padding: 0 24px;
-  border-radius: 100px;
-  background-color: var(--sf-accent-pink); /* Design says pink/peach button for newsletter */
-  color: var(--sf-teal-deep);
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 16px;
+  height: var(--spacing-xl);            /* 48px — Spacing-xl */
+  padding: 0 var(--spacing-md);         /* 0 24px */
+  border-radius: var(--radius-full);    /* 1000px — Radius-full */
+  background-color: var(--sf-accent-pink);
+  color: var(--color-primary-500);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);       /* 16px — Font-size-sm */
   transition: opacity 0.3s ease;
 }
 
@@ -216,7 +216,7 @@
 /* Links Columns */
 .footer-links {
   display: flex;
-  gap: 48px; /* Figma: 48px */
+  gap: var(--spacing-xl);               /* 48px — Spacing-xl */
   flex: 1;
   justify-content: flex-end;
 }
@@ -224,13 +224,13 @@
 .links-column {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: var(--spacing-md);               /* 24px — Spacing-md */
 }
 
 .links-title {
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 24px;
+  font-family: var(--font-family-primary);  /* Noto Naskh Arabic */
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-base);         /* 24px — Font-size-base */
   color: #fff;
 }
 
@@ -240,13 +240,13 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--spacing-sm);               /* 16px — Spacing-sm */
 }
 
 .links-list a, .links-list span {
-  font-family: var(--sf-font-body);
-  font-weight: 400;
-  font-size: 16px;
+  font-family: var(--font-family-secondary); /* Tajawal */
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-sm);           /* 16px — Font-size-sm */
   color: rgba(255, 255, 255, 0.8);
   transition: color 0.3s ease;
 }
@@ -258,7 +258,7 @@
 .contact-list li {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 12px; /* No exact token for 12px */
 }
 
 .contact-icon {
@@ -278,12 +278,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: var(--spacing-md);               /* 24px — Spacing-md */
 }
 
 .social-links {
   display: flex;
-  gap: 24px;
+  gap: var(--spacing-md);               /* 24px — Spacing-md */
 }
 
 .social-link {
@@ -306,10 +306,10 @@
 }
 
 .copyright {
-  font-family: var(--sf-font-body);
-  font-weight: 500; /* Figma: Medium 500 */
-  font-size: 16px; /* Figma: 16px */
-  color: #F8F5EF; /* Figma: #F8F5EF */
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);       /* 16px — Font-size-sm */
+  color: var(--color-white-400);
 }
 
 @media (max-width: 1024px) {
@@ -330,14 +330,14 @@
 
 @media (max-width: 768px) {
   .footer-section {
-    padding: 48px 0 32px;
+    padding: var(--spacing-xl) 0 var(--spacing-lg); /* 48px 0 32px */
   }
   .footer-container {
-    padding: 48px 24px;
-    gap: 24px;
+    padding: var(--spacing-xl) var(--spacing-md); /* 48px 24px */
+    gap: var(--spacing-md);                        /* 24px */
   }
   .newsletter-box {
-    padding: 24px;
+    padding: var(--spacing-md);                    /* 24px */
   }
   .newsletter-form {
     flex-direction: column;

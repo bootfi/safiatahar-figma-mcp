@@ -92,17 +92,17 @@ const scrollRight = () => {
 
 <style scoped>
 .courses-section {
-  padding: 80px 0;
-  background-color: var(--sf-bg-primary);
+  padding: var(--spacing-3xl) 0;             /* 80px 0 */
+  background-color: var(--color-surface-main);
 }
 
 .courses-container {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: var(--spacing-xl);                    /* 48px — Spacing-xl */
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 var(--spacing-md);              /* 0 24px */
 }
 
 .courses-header {
@@ -114,32 +114,32 @@ const scrollRight = () => {
 .header-text {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--spacing-xs);                    /* 8px — Spacing-xs */
 }
 
 .courses-title {
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 48px;
-  color: var(--sf-gold);
+  font-family: var(--font-family-primary);   /* Noto Naskh Arabic */
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xl);            /* 48px — Font-size-xl */
+  color: var(--color-accent-500);
 }
 
 .courses-subtitle {
-  font-family: var(--sf-font-body);
-  font-weight: 400;
-  font-size: 20px;
-  color: var(--sf-teal-deep);
+  font-family: var(--font-family-secondary); /* Tajawal */
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-body);          /* 20px — Font-size-body */
+  color: var(--color-primary-500);
 }
 
 .header-nav {
   display: flex;
-  gap: 16px;
+  gap: var(--spacing-sm);                    /* 16px — Spacing-sm */
 }
 
 .nav-btn {
-  width: 48px;
-  height: 48px;
-  border-radius: 1000px;
+  width: var(--spacing-xl);                  /* 48px — Spacing-xl */
+  height: var(--spacing-xl);
+  border-radius: var(--radius-full);         /* 1000px — Radius-full */
   border: none;
   display: flex;
   align-items: center;
@@ -160,10 +160,10 @@ const scrollRight = () => {
 
 .courses-list {
   display: flex;
-  gap: 24px;
+  gap: var(--spacing-md);                    /* 24px — Spacing-md */
   overflow-x: auto;
-  padding-bottom: 24px; /* for shadow */
-  scrollbar-width: none; /* Firefox */
+  padding-bottom: var(--spacing-md);         /* 24px (for shadow) */
+  scrollbar-width: none;
 }
 
 .courses-list::-webkit-scrollbar {
@@ -173,12 +173,12 @@ const scrollRight = () => {
 .course-card {
   min-width: 349px;
   height: 495px;
-  background-color: var(--sf-bg-primary);
-  border-radius: 24px;
+  background-color: var(--color-surface-main);
+  border-radius: var(--radius-mid);          /* 24px — Radius-mid */
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--sf-gold);
+  border: 1px solid var(--color-accent-500);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -186,14 +186,14 @@ const scrollRight = () => {
   position: relative;
   width: 100%;
   height: 334px;
-  padding: 16px;
+  padding: var(--spacing-sm);                /* 16px — Spacing-sm */
 }
 
 .card-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: var(--radius-mid-mobile);   /* 16px — Radius-mid-mobile */
 }
 
 .card-fav-btn {
@@ -210,17 +210,17 @@ const scrollRight = () => {
 }
 
 .card-content {
-  padding: 24px;
+  padding: var(--spacing-md);                /* 24px — Spacing-md */
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--spacing-sm);                    /* 16px — Spacing-sm */
 }
 
 .card-tag {
   display: inline-block;
-  padding: 4px 12px;
-  background: rgba(9, 59, 51, 0.1);
-  border-radius: 100px;
+  padding: var(--spacing-xxs) 12px;          /* 4px 12px */
+  background: var(--color-surface-transparent-primary);
+  border-radius: var(--radius-full);         /* 1000px — Radius-full */
   width: fit-content;
 }
 
@@ -232,18 +232,18 @@ const scrollRight = () => {
 }
 
 .card-title {
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 32px;
-  color: var(--sf-teal-deep);
+  font-family: var(--font-family-primary);   /* Noto Naskh Arabic */
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);            /* 32px — Font-size-lg */
+  color: var(--color-primary-500);
 }
 
 .card-desc {
-  font-family: var(--sf-font-body);
-  font-weight: 500;
-  font-size: 16px;
+  font-family: var(--font-family-secondary); /* Tajawal */
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);            /* 16px — Font-size-sm */
   line-height: 1.5;
-  color: var(--sf-teal-muted);
+  color: var(--color-primary-400);
   flex-grow: 1;
 }
 
@@ -251,16 +251,16 @@ const scrollRight = () => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 24px;
-  border-radius: 100px;
-  border: 1px solid var(--sf-teal-deep);
+  padding: 12px var(--spacing-md);           /* 12px 24px (12 has no token) */
+  border-radius: var(--radius-full);         /* 1000px — Radius-full */
+  border: 1px solid var(--color-primary-500);
   background: transparent;
-  color: var(--sf-teal-deep);
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 16px;
+  color: var(--color-primary-500);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);            /* 16px — Font-size-sm */
   transition: all 0.3s ease;
-  margin-top: 16px;
+  margin-top: var(--spacing-sm);             /* 16px — Spacing-sm */
 }
 
 .card-btn:hover {
@@ -282,16 +282,16 @@ const scrollRight = () => {
   .courses-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
+    gap: var(--spacing-md);                  /* 24px */
   }
   .courses-title {
-    font-size: 32px;
+    font-size: var(--font-size-lg);          /* 32px */
   }
   .courses-subtitle {
-    font-size: 16px;
+    font-size: var(--font-size-sm);          /* 16px */
   }
   .header-nav {
-    display: none; /* Hide nav buttons on mobile */
+    display: none;
   }
   .course-card {
     min-width: 244px;
@@ -300,10 +300,10 @@ const scrollRight = () => {
     height: 240px;
   }
   .card-title {
-    font-size: 24px;
+    font-size: var(--font-size-base);        /* 24px */
   }
   .card-desc {
-    font-size: 14px;
+    font-size: var(--font-size-xs);          /* 12px (was 14 — closest token) */
   }
 }
 </style>

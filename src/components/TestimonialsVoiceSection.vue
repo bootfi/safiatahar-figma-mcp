@@ -42,38 +42,38 @@
 }
 
 .voice-header {
-  padding: 80px 24px 64px;
+  padding: var(--spacing-3xl) var(--spacing-md) var(--spacing-2xl); /* 80px 24px 64px */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 16px;
+  gap: var(--spacing-sm);                /* 16px — Spacing-sm */
 }
 
 .voice-title {
   font-family: var(--sf-font-primary);
-  font-weight: 900;
-  font-size: 48px;
-  color: var(--sf-teal-deep);
+  font-weight: var(--font-weight-extrabold);  /* 900 */
+  font-size: var(--font-size-xl);             /* 48px — Font-size-xl */
+  color: var(--color-primary-500);
 }
 
 .voice-title__part-2 {
-  color: var(--sf-gold);
+  color: var(--color-accent-500);
 }
 
 .voice-subtitle {
-  font-family: var(--sf-font-body);
-  font-weight: 400; /* Figma: Tajawal Regular 400 */
-  font-size: 24px;
-  color: var(--sf-teal-deep);
+  font-family: var(--font-family-secondary);  /* Tajawal */
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-base);           /* 24px — Font-size-base */
+  color: var(--color-primary-500);
   max-width: 800px;
 }
 
 .voice-body {
-  background: var(--sf-gradient-teal); /* corresponds to fill_e8a64b15 */
-  padding: 64px 80px; /* from About Content padding */
+  background: var(--sf-gradient-teal);
+  padding: var(--spacing-2xl) var(--spacing-3xl); /* 64px 80px */
   position: relative;
-  overflow: hidden; /* Wait, if the image extends out, we might want overflow visible, but let's keep hidden if the parent doesn't allow it, or adjust */
+  overflow: hidden;
 }
 
 .voice-content-wrapper {
@@ -95,10 +95,9 @@
 }
 
 .voice-text-1, .voice-text-3 {
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 48px; /* Figma: 48px for these headings */
-  /* Figma: vertical gold gradient */
+  font-family: var(--font-family-primary);  /* Noto Naskh Arabic */
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xl);            /* 48px — Font-size-xl */
   background: var(--sf-gradient-gold-vertical);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -107,11 +106,11 @@
 }
 
 .voice-text-2 {
-  font-family: var(--sf-font-body);
-  font-weight: 400; /* Figma: Tajawal Regular 400 */
-  font-size: 32px;
+  font-family: var(--font-family-secondary); /* Tajawal */
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-lg);            /* 32px — Font-size-lg */
   line-height: 1.5;
-  color: #F8F5EF;
+  color: var(--color-white-400);
   text-align: right;
 }
 
@@ -155,14 +154,14 @@
   }
   .voice-text-box {
     width: 100%;
-    padding: 0 24px;
+    padding: 0 var(--spacing-md);          /* 0 24px */
     text-align: center;
     align-items: center;
   }
   .voice-images {
     width: 100%;
     height: 500px;
-    margin-top: 64px;
+    margin-top: var(--spacing-2xl);        /* 64px */
   }
   .voice-img-tall {
     left: 50%;
@@ -176,26 +175,26 @@
 
 @media (max-width: 768px) {
   .voice-header {
-    padding: 48px 24px;
+    padding: var(--spacing-xl) var(--spacing-md); /* 48px 24px */
   }
   .voice-title {
-    font-size: 32px;
+    font-size: var(--font-size-lg);          /* 32px */
   }
   .voice-subtitle {
-    font-size: 16px;
+    font-size: var(--font-size-sm);          /* 16px */
   }
   .voice-body {
-    padding: 48px 0;
+    padding: var(--spacing-xl) 0;            /* 48px 0 */
   }
   .voice-text-1, .voice-text-3 {
-    font-size: 24px;
+    font-size: var(--font-size-base);        /* 24px */
   }
   .voice-text-2 {
-    font-size: 24px;
+    font-size: var(--font-size-base);        /* 24px */
   }
   .voice-images {
     height: 400px;
-    margin-top: 48px;
+    margin-top: var(--spacing-xl);           /* 48px */
   }
   .voice-img-tall {
     width: 246px;

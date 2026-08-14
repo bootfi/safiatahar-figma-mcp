@@ -55,39 +55,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px 80px; /* Figma: 24px 80px */
+  padding: var(--spacing-md) var(--spacing-3xl); /* 24px 80px */
 }
 
 .cta-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px; /* Figma: 32px */
+  gap: var(--spacing-lg);               /* 32px — Spacing-lg */
   text-align: center;
-  width: 496px; /* Figma: 496px */
+  width: 496px;
 }
 
 .cta-title {
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 64px; /* Figma: 64px */
-  color: #F8F5EF;
+  font-family: var(--font-family-primary);  /* Noto Naskh Arabic */
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-2xl);          /* 64px — Font-size-2xl */
+  color: var(--color-white-400);
 }
 
 .cta-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 16px;
-  border-radius: 1000px;
-  background: var(--sf-gradient-gold-btn); /* Figma: gold gradient */
-  color: var(--sf-dark); /* Figma: #071B1E */
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 16px;
+  padding: var(--spacing-xs) var(--spacing-sm); /* 8px 16px */
+  border-radius: var(--radius-full);            /* 1000px — Radius-full */
+  background: var(--sf-gradient-gold-btn);
+  color: var(--color-black-500);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);               /* 16px — Font-size-sm */
   line-height: 1.5em;
-  width: 496px; /* Figma: 496px */
-  height: 48px;
+  width: 496px;
+  height: var(--spacing-xl);                    /* 48px — Spacing-xl */
   transition: opacity 0.3s ease;
 }
 
@@ -98,17 +98,17 @@
 @media (max-width: 768px) {
   .cta-banner-section {
     height: 400px;
-    padding: 24px;
+    padding: var(--spacing-md);           /* 24px */
   }
   .cta-container {
-    padding: 24px;
+    padding: var(--spacing-md);           /* 24px */
   }
   .cta-content {
     width: 100%;
-    gap: 32px;
+    gap: var(--spacing-lg);               /* 32px */
   }
   .cta-title {
-    font-size: 32px;
+    font-size: var(--font-size-lg);       /* 32px */
   }
   .cta-btn {
     width: 100%;

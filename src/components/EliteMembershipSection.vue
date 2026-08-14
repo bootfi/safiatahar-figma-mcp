@@ -72,33 +72,33 @@ const features = [
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 64px;
-  padding: 48px 80px; /* Figma: 48px 80px */
+  gap: var(--spacing-2xl);               /* 64px — Spacing-2xl */
+  padding: var(--spacing-xl) var(--spacing-3xl); /* 48px 80px */
 }
 
 /* Features side (Figma: Membership Info — gold bordered rows) */
 .membership-features {
   flex: 1;
-  max-width: 577.5px; /* Figma: 577.5px */
+  max-width: 577.5px;
   display: flex;
   flex-direction: column;
-  gap: 16px; /* Figma: 16px */
+  gap: var(--spacing-sm);                /* 16px — Spacing-sm */
 }
 
 /* Figma: gold-bordered rows with subtle gold gradient bg */
 .feature-item {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
-  padding: 16px 24px;
+  gap: var(--spacing-sm);                /* 16px — Spacing-sm */
+  padding: var(--spacing-sm) var(--spacing-md); /* 16px 24px */
   background: linear-gradient(90deg, rgba(184, 151, 95, 0.1) 0%, rgba(247, 229, 155, 0.1) 100%);
-  border: 0.6px solid var(--sf-gold);
-  border-radius: 24px;
+  border: 0.6px solid var(--color-accent-500);
+  border-radius: var(--radius-mid);      /* 24px — Radius-mid */
 }
 
 .feature-icon {
-  width: 48px;
-  height: 48px;
+  width: var(--spacing-xl);              /* 48px — Spacing-xl */
+  height: var(--spacing-xl);
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   display: flex;
@@ -116,47 +116,47 @@ const features = [
 .feature-text {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--spacing-xs);               /* 8px — Spacing-xs */
 }
 
 .feature-title {
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 20px;
-  color: #F8F5EF; /* Light text on teal bg */
+  font-family: var(--font-family-primary);  /* Noto Naskh Arabic */
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-body);         /* 20px — Font-size-body */
+  color: var(--color-white-400);
 }
 
 .feature-desc {
-  font-family: var(--sf-font-body);
-  font-weight: 400;
-  font-size: 16px;
+  font-family: var(--font-family-secondary); /* Tajawal */
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-sm);            /* 16px — Font-size-sm */
   line-height: 1.5;
-  color: rgba(248, 245, 239, 0.7); /* Slightly muted light text */
+  color: rgba(248, 245, 239, 0.7);
 }
 
 /* Content / Benefits side */
 .membership-content {
   flex: 1;
-  max-width: 557.5px; /* Figma: 557.5px */
+  max-width: 557.5px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: var(--spacing-lg);               /* 32px — Spacing-lg */
   align-items: center;
 }
 
 .membership-title {
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 48px;
-  color: #F8F5EF; /* Light on teal */
+  font-family: var(--font-family-primary);  /* Noto Naskh Arabic */
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xl);           /* 48px — Font-size-xl */
+  color: var(--color-white-400);
 }
 
 .membership-desc {
-  font-family: var(--sf-font-body);
-  font-weight: 500;
-  font-size: 20px;
+  font-family: var(--font-family-secondary); /* Tajawal */
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-body);          /* 20px — Font-size-body */
   line-height: 1.8;
-  color: rgba(248, 245, 239, 0.8); /* Slightly muted */
+  color: rgba(248, 245, 239, 0.8);
   text-align: center;
 }
 
@@ -164,16 +164,16 @@ const features = [
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 16px;
-  border-radius: 1000px;
-  background: var(--sf-gradient-gold-btn); /* Figma: gold gradient */
-  color: var(--sf-dark);
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 16px;
+  padding: var(--spacing-xs) var(--spacing-sm); /* 8px 16px */
+  border-radius: var(--radius-full);            /* 1000px — Radius-full */
+  background: var(--sf-gradient-gold-btn);
+  color: var(--color-black-500);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);               /* 16px — Font-size-sm */
   line-height: 1.5em;
-  width: 100%; /* Figma: alignSelf stretch */
-  height: 48px;
+  width: 100%;
+  height: var(--spacing-xl);                    /* 48px — Spacing-xl */
   transition: opacity 0.3s ease;
 }
 
@@ -201,26 +201,26 @@ const features = [
     padding: 0;
   }
   .membership-container {
-    padding: 48px 24px;
-    gap: 32px;
+    padding: var(--spacing-xl) var(--spacing-md); /* 48px 24px */
+    gap: var(--spacing-lg);                        /* 32px */
   }
   .membership-title {
-    font-size: 32px;
+    font-size: var(--font-size-lg);                /* 32px */
   }
   .membership-desc {
-    font-size: 16px;
+    font-size: var(--font-size-sm);                /* 16px */
   }
   .membership-btn {
     width: 100%;
   }
   .feature-item {
-    padding: 16px;
+    padding: var(--spacing-sm);                    /* 16px */
   }
   .feature-title {
-    font-size: 18px;
+    font-size: var(--font-size-body);              /* 20px (was 18px, closest token) */
   }
   .feature-desc {
-    font-size: 14px;
+    font-size: var(--font-size-xs);                /* 12px (was 14px, closest token) */
   }
 }
 </style>

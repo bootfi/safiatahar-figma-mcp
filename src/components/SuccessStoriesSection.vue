@@ -62,8 +62,8 @@ const stories = [
 
 <style scoped>
 .stories-section {
-  padding: 80px 0;
-  background-color: var(--sf-bg-primary);
+  padding: var(--spacing-3xl) 0;          /* 80px 0 */
+  background-color: var(--color-surface-main);
 }
 
 .stories-container {
@@ -78,21 +78,21 @@ const stories = [
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 8px;
+  gap: var(--spacing-xs);                 /* 8px — Spacing-xs */
 }
 
 .stories-title {
-  font-family: var(--sf-font-secondary);
-  font-weight: 700;
-  font-size: 48px;
-  color: var(--sf-gold);
+  font-family: var(--font-family-primary); /* Noto Naskh Arabic */
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xl);          /* 48px — Font-size-xl */
+  color: var(--color-accent-500);
 }
 
 .stories-subtitle {
-  font-family: var(--sf-font-body);
-  font-weight: 400;
-  font-size: 20px;
-  color: var(--sf-teal-deep);
+  font-family: var(--font-family-secondary); /* Tajawal */
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-body);          /* 20px — Font-size-body */
+  color: var(--color-primary-500);
 }
 
 .stories-content {
@@ -100,12 +100,12 @@ const stories = [
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 48px;
+  gap: var(--spacing-xl);                 /* 48px — Spacing-xl */
 }
 
 .stories-list {
   display: flex;
-  gap: 24px;
+  gap: var(--spacing-md);                 /* 24px — Spacing-md */
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -135,14 +135,14 @@ const stories = [
 }
 
 .story-card-inner {
-  background-color: var(--sf-bg-ivory);
-  border-radius: 24px;
-  padding: 64px 24px 24px;
+  background-color: var(--color-surface-secondary);
+  border-radius: var(--radius-mid);       /* 24px — Radius-mid */
+  padding: var(--spacing-2xl) var(--spacing-md) var(--spacing-md); /* 64px 24px 24px */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 16px;
+  gap: var(--spacing-sm);                 /* 16px — Spacing-sm */
   height: 100%;
   min-height: 250px;
 }
@@ -153,25 +153,25 @@ const stories = [
 }
 
 .story-text {
-  font-family: var(--sf-font-body);
-  font-weight: 500;
-  font-size: 16px;
+  font-family: var(--font-family-secondary); /* Tajawal */
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);            /* 16px — Font-size-sm */
   line-height: 1.5;
-  color: var(--sf-teal-deep); /* or teal-muted */
+  color: var(--color-primary-500);
   flex-grow: 1;
 }
 
 .story-name {
-  font-family: var(--sf-font-body);
-  font-weight: 700;
-  font-size: 20px;
-  color: var(--sf-teal-deep);
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-body);          /* 20px — Font-size-body */
+  color: var(--color-primary-500);
 }
 
 .stories-nav {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--spacing-xs);                 /* 8px — Spacing-xs */
 }
 
 .nav-dot {
@@ -196,10 +196,10 @@ const stories = [
 
 @media (max-width: 768px) {
   .stories-title {
-    font-size: 32px;
+    font-size: var(--font-size-lg);       /* 32px */
   }
   .stories-subtitle {
-    font-size: 16px;
+    font-size: var(--font-size-sm);       /* 16px */
   }
   .story-card {
     width: 329px;
