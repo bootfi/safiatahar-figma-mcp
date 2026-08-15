@@ -1,11 +1,13 @@
 <script setup>
+import { getAssetUrl } from '../utils/assets.js'
+
 // Press logos from Figma
 const logos = [
-  '/images/press-logo-1-2b78f1.png',
-  '/images/press-logo-2-753ec8.png',
-  '/images/press-logo-3-1b1243.png',
-  '/images/press-logo-4-44141c.png',
-  '/images/press-logo-5.png'
+  getAssetUrl('/images/press-logo-1-2b78f1.png'),
+  getAssetUrl('/images/press-logo-2-753ec8.png'),
+  getAssetUrl('/images/press-logo-3-1b1243.png'),
+  getAssetUrl('/images/press-logo-4-44141c.png'),
+  getAssetUrl('/images/press-logo-5.png')
 ]
 
 // Duplicate for marquee effect

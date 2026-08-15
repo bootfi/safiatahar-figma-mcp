@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { getAssetUrl } from '../utils/assets.js'
 
 const isScrolled = ref(false)
 const isMobileMenuOpen = ref(false)
@@ -29,10 +30,10 @@ const toggleMenu = () => {
         <!-- Right Side (RTL): Actions -->
         <div class="navbar__actions">
           <button class="navbar__icon-btn" aria-label="Search">
-            <img src="/icons/search.svg" alt="Search" class="nav-icon" />
+            <img :src="getAssetUrl('/icons/search.svg')" alt="Search" class="nav-icon" />
           </button>
           <button class="navbar__icon-btn" aria-label="Cart">
-            <img src="/icons/cart.svg" alt="Cart" class="nav-icon" />
+            <img :src="getAssetUrl('/icons/cart.svg')" alt="Cart" class="nav-icon" />
           </button>
           <button class="navbar__login-btn">سجل دخولك</button>
         </div>
@@ -51,13 +52,13 @@ const toggleMenu = () => {
 
         <!-- Left Side (RTL): Logo -->
         <div class="navbar__logo">
-          <a href="/">
-            <img src="/icons/logo.svg" alt="Safia Tahar Logo" class="logo-img" />
+          <a href="#">
+            <img :src="getAssetUrl('/icons/logo.svg')" alt="Safia Tahar Logo" class="logo-img" />
           </a>
         </div>
 
         <button class="navbar__btn-menu-mobile" @click="toggleMenu" aria-label="Menu">
-          <img src="/icons/menu.svg" alt="Menu" class="nav-icon" />
+          <img :src="getAssetUrl('/icons/menu.svg')" alt="Menu" class="nav-icon" />
         </button>
       </div>
     </div>

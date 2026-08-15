@@ -1,10 +1,11 @@
 <script setup>
+import { getAssetUrl } from '../utils/assets.js'
 </script>
 
 <template>
   <footer class="footer-section">
     <!-- Big watermark logo -->
-    <img src="/icons/logo-watermark.svg" alt="" class="footer-watermark" />
+    <img :src="getAssetUrl('/icons/logo-watermark.svg')" alt="" class="footer-watermark" />
     
     <div class="footer-container sf-container">
       
@@ -13,7 +14,7 @@
         <!-- Newsletter Box -->
         <div class="newsletter-box">
           <div class="newsletter-icon-wrapper">
-            <img src="/icons/mail.svg" alt="Mail" class="newsletter-icon" />
+            <img :src="getAssetUrl('/icons/mail.svg')" alt="Mail" class="newsletter-icon" />
           </div>
           <div class="newsletter-text">
             <h4 class="newsletter-title">انضم إلى مجتمع صفية</h4>
@@ -54,15 +55,15 @@
             <h4 class="links-title">تواصل</h4>
             <ul class="links-list contact-list">
               <li>
-                <img src="/icons/mail.svg" alt="" class="contact-icon" />
+                <img :src="getAssetUrl('/icons/mail.svg')" alt="" class="contact-icon" />
                 <a href="mailto:contact@safiatahar.com" dir="ltr">contact@safiatahar.com</a>
               </li>
               <li>
-                <img src="/icons/whatsapp.svg" alt="" class="contact-icon" />
+                <img :src="getAssetUrl('/icons/whatsapp.svg')" alt="" class="contact-icon" />
                 <a href="tel:+971567693377" dir="ltr">+971567693377</a>
               </li>
               <li>
-                <img src="/icons/location.svg" alt="" class="contact-icon" />
+                <img :src="getAssetUrl('/icons/location.svg')" alt="" class="contact-icon" />
                 <span>دبي، الإمارات</span>
               </li>
             </ul>
@@ -77,10 +78,10 @@
       <!-- Bottom Section: Socials & Copyright -->
       <div class="footer-bottom">
         <div class="social-links">
-          <a href="#" class="social-link" aria-label="Facebook"><img src="/icons/facebook.svg" alt="" /></a>
-          <a href="#" class="social-link" aria-label="Instagram"><img src="/icons/instagram.svg" alt="" /></a>
-          <a href="#" class="social-link" aria-label="YouTube"><img src="/icons/youtube.svg" alt="" /></a>
-          <a href="#" class="social-link" aria-label="TikTok"><img src="/icons/tiktok.svg" alt="" /></a>
+          <a href="#" class="social-link" aria-label="Facebook"><img :src="getAssetUrl('/icons/facebook.svg')" alt="" /></a>
+          <a href="#" class="social-link" aria-label="Instagram"><img :src="getAssetUrl('/icons/instagram.svg')" alt="" /></a>
+          <a href="#" class="social-link" aria-label="YouTube"><img :src="getAssetUrl('/icons/youtube.svg')" alt="" /></a>
+          <a href="#" class="social-link" aria-label="TikTok"><img :src="getAssetUrl('/icons/tiktok.svg')" alt="" /></a>
         </div>
         
         <p class="copyright">© 2026 صفية طاهر | جميع الحقوق محفوظة</p>

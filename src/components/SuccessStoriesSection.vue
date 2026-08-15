@@ -1,22 +1,24 @@
 <script setup>
+import { getAssetUrl } from '../utils/assets.js'
+
 const stories = [
   {
     id: 1,
     name: 'خلود',
     quote: 'حبيت اشكرك على انك انت صفية، فعلا وجودي معك في المعجزات والاستقبال غير كل شي مع انني حضرت كورسات دكاترة ثانيين ، لكن سبحان الله انتي غير.',
-    avatar: '/images/avatar-kholoud.png'
+    avatar: getAssetUrl('/images/avatar-kholoud.png')
   },
   {
     id: 2,
     name: 'أحمد',
     quote: 'بصراحة، تجربتي مع صفية طاهر كانت نقطة تحول في حياتي. أسلوبها واضح، عملي، ويخليك تشوف الأمور من زاوية مختلفة. قدرت أغير كثير من القناعات التي كانت تعيقني، وأصبحت أكثر ثقة وتركيزًا في أهدافي.',
-    avatar: '/images/avatar-arwa.png' /* Fallback since Ahmad avatar not found */
+    avatar: getAssetUrl('/images/avatar-arwa.png')
   },
   {
     id: 3,
     name: 'أروى',
     quote: 'مدام صفية تعرفي انو بعد كورس المعجزات قدرت احقق اول 1000 دولار وزيادة فقط من الجلسات الفردية. صارلي سنة وانا بشتغل ككوتش ومرافقة لمرضى السرطان ما وصلت للمبلغ والجميل تدفق رهيب الحمد لله.',
-    avatar: '/images/avatar-arwa.png'
+    avatar: getAssetUrl('/images/avatar-arwa.png')
   }
 ]
 </script>
@@ -26,7 +28,7 @@ const stories = [
     <div class="stories-container sf-container">
       
       <div class="stories-header">
-        <h2 class="stories-title">قصص من عاشوا التحوُّل</h2>
+        <h2 class="stories-title">قصص من عاشوا التحوُّل</h2>
         <p class="stories-subtitle">كيف أصبحت 'صفية' رفيقة دربهم نحو الوعي؟</p>
       </div>
 
@@ -39,7 +41,7 @@ const stories = [
             
             <div class="story-card-inner">
               <div class="story-quote-icon">
-                <img src="/icons/quote.svg" alt="Quote" />
+                <img :src="getAssetUrl('/icons/quote.svg')" alt="Quote" />
               </div>
               
               <p class="story-text">{{ story.quote }}</p>

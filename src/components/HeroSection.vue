@@ -1,5 +1,6 @@
 <script setup>
 import { computed, ref, onMounted, onUnmounted } from 'vue'
+import { getAssetUrl } from '../utils/assets.js'
 
 const isMobile = ref(false)
 
@@ -18,8 +19,8 @@ onUnmounted(() => {
 
 const bgImage = computed(() => {
   return isMobile.value 
-    ? '/images/hero-mobile-bg-63e0d6.png' 
-    : '/images/hero-desktop-bg.png'
+    ? getAssetUrl('/images/hero-mobile-bg-63e0d6.png') 
+    : getAssetUrl('/images/hero-desktop-bg.png')
 })
 </script>
 
@@ -30,7 +31,7 @@ const bgImage = computed(() => {
     <div class="hero-container sf-container">
       <div class="hero-content">
         <!-- Logo watermark -->
-        <img class="hero-watermark" src="/icons/logo-watermark.svg" alt="Safia Watermark" />
+        <img class="hero-watermark" :src="getAssetUrl('/icons/logo-watermark.svg')" alt="Safia Watermark" />
         
         <div class="hero-quote">
           <h1 class="hero-title">
@@ -40,7 +41,7 @@ const bgImage = computed(() => {
         </div>
 
         <!-- Signature moved to hero-content level for correct absolute positioning -->
-        <img class="hero-signature" src="/icons/signature.svg" alt="Safia Signature" />
+        <img class="hero-signature" :src="getAssetUrl('/icons/signature.svg')" alt="Safia Signature" />
 
         <button class="hero-btn">عش التحول الآن</button>
       </div>

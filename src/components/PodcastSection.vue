@@ -1,4 +1,5 @@
 <script setup>
+import { getAssetUrl } from '../utils/assets.js'
 </script>
 
 <template>
@@ -21,11 +22,11 @@
             <p class="cta-title">تابع البودكاست على</p>
             <div class="cta-buttons">
               <button class="social-btn">
-                <img src="/icons/youtube.svg" alt="YouTube" class="social-icon" />
+                <img :src="getAssetUrl('/icons/youtube.svg')" alt="YouTube" class="social-icon" />
                 Youtube
               </button>
               <button class="social-btn">
-                <img src="/icons/spotify.svg" alt="Spotify" class="social-icon" />
+                <img :src="getAssetUrl('/icons/spotify.svg')" alt="Spotify" class="social-icon" />
                 Spotify
               </button>
             </div>
@@ -33,7 +34,7 @@
         </div>
 
         <div class="podcast-image-wrapper">
-          <img src="/images/podcast-cover-2cc170.png" alt="Safia Podcast" class="podcast-image" />
+          <img :src="getAssetUrl('/images/podcast-cover-2cc170.png')" alt="Safia Podcast" class="podcast-image" />
         </div>
 
       </div>

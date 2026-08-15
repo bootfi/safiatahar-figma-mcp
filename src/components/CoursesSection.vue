@@ -1,26 +1,27 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
+import { getAssetUrl } from '../utils/assets.js'
 
 const courses = [
   {
     id: 1,
     title: 'اصنع المعجزات',
     description: 'القيم هي الأساس الذي تبنى عليه حياة متناسقة مع الحقيقة',
-    image: '/images/course-values.png',
+    image: getAssetUrl('/images/course-values.png'),
     tag: '5 مستويات'
   },
   {
     id: 2,
     title: 'المعجزات',
     description: 'ميلاد المعجزة من الداخل .. حيث تولد النسخة الخارقة من جديد',
-    image: '/images/course-miracles.png',
+    image: getAssetUrl('/images/course-miracles.png'),
     tag: '5 مستويات'
   },
   {
     id: 3,
     title: 'عهد الثراء الواحد',
     description: 'رحلة تحول عميقة تأخذك إلى أعماق ذاتك، لتكتشف قدراتك فتعيد بناء نفسك بوعي جديد.',
-    image: '/images/course-wealth.png',
+    image: getAssetUrl('/images/course-wealth.png'),
     tag: '5 مستويات'
   }
 ]
@@ -51,10 +52,10 @@ const scrollRight = () => {
         </div>
         <div class="header-nav">
           <button class="nav-btn" @click="scrollRight">
-            <img src="/icons/arrow-right.svg" alt="Right" />
+            <img :src="getAssetUrl('/icons/arrow-right.svg')" alt="Right" />
           </button>
           <button class="nav-btn" @click="scrollLeft">
-            <img src="/icons/arrow-left.svg" alt="Left" />
+            <img :src="getAssetUrl('/icons/arrow-left.svg')" alt="Left" />
           </button>
         </div>
       </div>
@@ -65,7 +66,7 @@ const scrollRight = () => {
           <div class="card-image-wrapper">
             <img :src="course.image" :alt="course.title" class="card-image" />
             <button class="card-fav-btn">
-              <img src="/icons/heart.svg" alt="Favorite" />
+              <img :src="getAssetUrl('/icons/heart.svg')" alt="Favorite" />
             </button>
           </div>
 
@@ -79,7 +80,7 @@ const scrollRight = () => {
 
             <button class="card-btn">
               عرض التفاصيل
-              <img src="/icons/arrow-left.svg" alt="" aria-hidden="true" class="btn-icon" />
+              <img :src="getAssetUrl('/icons/arrow-left.svg')" alt="" aria-hidden="true" class="btn-icon" />
             </button>
           </div>
 

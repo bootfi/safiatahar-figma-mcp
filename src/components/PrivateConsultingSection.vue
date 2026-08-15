@@ -1,5 +1,6 @@
 <script setup>
 import { computed, ref, onMounted, onUnmounted } from 'vue'
+import { getAssetUrl } from '../utils/assets.js'
 
 const isMobile = ref(false)
 
@@ -18,8 +19,8 @@ onUnmounted(() => {
 
 const bgImage = computed(() => {
   return isMobile.value 
-    ? '/images/consulting-mobile-bg.png' 
-    : '/images/consulting-bg.png'
+    ? getAssetUrl('/images/consulting-mobile-bg.png') 
+    : getAssetUrl('/images/consulting-bg.png')
 })
 </script>
 

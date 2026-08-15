@@ -1,29 +1,31 @@
 <script setup>
+import { getAssetUrl } from '../utils/assets.js'
+
 const features = [
   {
     title: 'لقاءات شهرية مباشرة',
     desc: 'لقاء مباشر كل شهر مع صفية طاهر للإجابة عن الأسئلة والتعمق في مواضيع الوعي، الحياة، والعلاقات.',
-    icon: '/icons/calendar.svg'
+    icon: getAssetUrl('/icons/calendar.svg')
   },
   {
     title: 'تأملات حصرية',
     desc: 'تأملات شهرية مصممة لرفع الوعي، تعزيز السلام الداخلي، وترسيخ التحول في الحياة اليومية.',
-    icon: '/icons/yoga.svg'
+    icon: getAssetUrl('/icons/yoga.svg')
   },
   {
     title: 'دعم و إرشاد',
     desc: 'نصائح وتوجيهات حياتية مهمة لكل فرد في رحلته',
-    icon: '/icons/checkmark.svg'
+    icon: getAssetUrl('/icons/checkmark.svg')
   },
   {
     title: 'أولوية الوصول للمزايا الخاصة',
     desc: 'استفد من أولوية التسجيل في البرامج الجديدة، بالإضافة إلى مزايا ومحتوى حصري مخصص لأعضاء عضوية النخبة فقط.',
-    icon: '/icons/sparkles.svg'
+    icon: getAssetUrl('/icons/sparkles.svg')
   },
   {
     title: 'مجتمع خاص للأعضاء',
     desc: 'انضم إلى مجتمع واع يجمع أشخاصًا يشاركونك رحلة النمو، حيث تجد الدعم، الإلهام، والتشجيع المستمر.',
-    icon: '/icons/users.svg'
+    icon: getAssetUrl('/icons/users.svg')
   }
 ]
 </script>

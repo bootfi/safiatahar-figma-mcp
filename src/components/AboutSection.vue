@@ -1,4 +1,5 @@
 <script setup>
+import { getAssetUrl } from '../utils/assets.js'
 </script>
 
 <template>
@@ -26,12 +27,12 @@
         </div>
         <button class="about-btn">
           تعرف على صفية
-          <img src="/icons/arrow-left.svg" alt="" aria-hidden="true" class="btn-icon" />
+          <img :src="getAssetUrl('/icons/arrow-left.svg')" alt="" aria-hidden="true" class="btn-icon" />
         </button>
       </div>
       <div class="about-image-wrapper">
         <div class="about-image-deco"></div>
-        <img class="about-image" src="/images/about-photo.png" alt="صفية طاهر" />
+        <img class="about-image" :src="getAssetUrl('/images/about-photo.png')" alt="صفية طاهر" />
       </div>
     </div>
   </section>

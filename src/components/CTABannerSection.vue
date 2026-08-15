@@ -1,9 +1,10 @@
 <script setup>
+import { getAssetUrl } from '../utils/assets.js'
 </script>
 
 <template>
   <section class="cta-banner-section">
-    <div class="cta-bg"></div>
+    <div class="cta-bg" :style="{ backgroundImage: `url(${getAssetUrl('/images/cta-banner-bg.png')})` }"></div>
     <div class="cta-overlay"></div>
     
     <div class="cta-container sf-container">

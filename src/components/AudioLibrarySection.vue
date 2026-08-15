@@ -1,22 +1,24 @@
 <script setup>
+import { getAssetUrl } from '../utils/assets.js'
+
 const audioItems = [
   {
     id: 1,
     title: 'الأمسيات التوضيحية',
     description: 'تنظيفات قوية لتطهير و تحرير اي شي عالق.',
-    image: '/images/audio-evenings.png'
+    image: getAssetUrl('/images/audio-evenings.png')
   },
   {
     id: 2,
     title: 'جلسات التأمل',
     description: 'حين يهدأ العقل يقود القلب فتتجلى الانوار و الفتوحات',
-    image: '/images/audio-meditation.png'
+    image: getAssetUrl('/images/audio-meditation.png')
   },
   {
     id: 3,
     title: 'سبليمنال',
     description: 'ترددات مع كلام غير ظاهر يخترق عقلك الباطن لتغيير اسرع.',
-    image: '/images/audio-subliminal.png'
+    image: getAssetUrl('/images/audio-subliminal.png')
   }
 ]
 </script>

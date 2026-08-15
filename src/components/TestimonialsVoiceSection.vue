@@ -1,4 +1,5 @@
 <script setup>
+import { getAssetUrl } from '../utils/assets.js'
 </script>
 
 <template>
@@ -25,8 +26,8 @@
         </div>
 
         <div class="voice-images">
-          <img src="/images/safia-photo-tall.png" alt="Safia Tahar" class="voice-img-tall" />
-          <img src="/images/safia-photo-small.png" alt="Safia Tahar" class="voice-img-small" />
+          <img :src="getAssetUrl('/images/safia-photo-tall.png')" alt="Safia Tahar" class="voice-img-tall" />
+          <img :src="getAssetUrl('/images/safia-photo-small.png')" alt="Safia Tahar" class="voice-img-small" />
         </div>
 
       </div>
